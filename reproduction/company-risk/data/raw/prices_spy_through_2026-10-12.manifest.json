@@ -1,0 +1,18 @@
+{
+  "source": "Yahoo Finance via yfinance",
+  "yfinance_version": "1.7.0",
+  "ticker": "SPY",
+  "download_arguments": {
+    "start": "2015-01-01",
+    "end_exclusive": "2026-10-13",
+    "auto_adjust": false,
+    "actions": false
+  },
+  "pulled_at_utc": "2026-10-14T01:26:42+00:00",
+  "first_session": "2015-01-02",
+  "last_session": "2026-10-12",
+  "sessions": 2961,
+  "file": "data/raw/prices_spy_through_2026-10-12.csv",
+  "sha256": "fb6005f6431884c37bbeb28280b7fb0e3d964f9102d6e18d89168ffa0492ed44",
+  "note": "Raw vendor data, saved as downloaded. The CSV is git-ignored; this manifest is committed."
+}

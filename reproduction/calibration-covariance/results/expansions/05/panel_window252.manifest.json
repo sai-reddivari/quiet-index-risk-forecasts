@@ -1,0 +1,252 @@
+{
+  "file": "results/expansions/05/panel_window252.csv",
+  "built_by": "quiet_index_500 research pipeline",
+  "built_at_utc": "2026-10-15T20:00:54+00:00",
+  "inputs": [
+    {
+      "file": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    },
+    {
+      "file": "data/processed/universe_weights_2026-09-30.csv",
+      "sha256": "89c624ebfb8d9a29c3e7ec9f4165847301b6742ffc9d4d573070b4925a55711c"
+    },
+    {
+      "file": "data/processed/ivv_equity_holdings_2026-09-30.csv",
+      "sha256": "c64b3e43616769ebb9cdc497963f9dee6c53f1f8691d084becc27d0a1056c164"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "file": "data/raw/prices_spy_through_2026-10-12.csv",
+      "sha256": "fb6005f6431884c37bbeb28280b7fb0e3d964f9102d6e18d89168ffa0492ed44"
+    },
+    {
+      "file": "data/raw/prices_smh_through_2026-10-12.csv",
+      "sha256": "d12bfb600f6037b14a8ad0b8f05f3f15c9d1e67b756a241269e2912f3f7641b4"
+    },
+    {
+      "file": "data/processed/ff5_mom_factors_daily_2015-01-02_2026-08-31.csv",
+      "sha256": "63326418d32ce11eb07de8087960755bc49d80538ce39255971615a17fd11f78"
+    },
+    {
+      "file": "data/processed/same_security_rules_2026-09-30.csv",
+      "sha256": "0f5f79d9f9c8c59c3f1480c0ec9da5e7031bee5d123e134beb3ed0621901968e"
+    },
+    {
+      "file": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+      "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9"
+    },
+    {
+      "file": "data/raw/treasury_DGS10_source_retrieved_2026-10-15.html",
+      "sha256": "fa03ec9f306650620d17610c14dd7f14cc8778fc1e1172a071166b462e07d8a4"
+    },
+    {
+      "file": "results/expansions/04/aligned_rates.csv",
+      "sha256": "c8bd36a1f1138c5bcae3c3fa90e6ab1792e6e02bc50d2504d7f619de4b7cfca0"
+    },
+    {
+      "file": "data/raw/market_cap_fmp_through_2026-10-12.csv",
+      "sha256": "f73492a70b0633be40c258cb4fc8c42ddcad82f1e56ed2122999cdf34cc1cfca"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/settings.py",
+      "sha256": "b39dbe9d43cdb44a017892f0fcc1bc6e9009e7c6a595281c74d1d8e317f6ec8f"
+    },
+    {
+      "file": "src/quiet_index_500/research_io.py",
+      "sha256": "abc6f9a9a7518e9b98b107c4a20c172beb071a15b4df0101ffa39af56456b488"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/__init__.py",
+      "sha256": "55ca05640568d582aa1da87f1f54836de79cee944c97131dd4589c3f506ac894"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/build.py",
+      "sha256": "cc2dee3f6325cd398be977023b8635020c4513d4d8518193d423bfa9fb9898b4"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/calendar.py",
+      "sha256": "3a71aacf99b4e2b8d223568dde8a108f94fc628ab4578a10f53ce635bfd40a71"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "79ad3f0ae6cadcc1d1ce000a15ed24fd4c224ace042bc9750ffdb88f7f7a031d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/eligibility.py",
+      "sha256": "712eea26dd9b7f979b8b28ae64f9f3fa442dce886173f47a3cc1326ed0f314ea"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/inventory.py",
+      "sha256": "66fe42ebc27787958902e0005fd50a8ed207907497185ae58391418829e9ea82"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "ff28147820dea77fd4229f7dfad0bb6b6dba8d964f2e2753428c295c10a5e8d8"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "02aefaa647c4a63da273972c2e4eb05d0ddb89566732c0456d647165621eaaef"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "f04824fe1f82e7c50201206f942d1b1abea98f314bcfee657b240678d970747b"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/validation.py",
+      "sha256": "ff51334319b67ef299f90ea41bf69165db01fbfeb2fa5e045ca2143ee1887c25"
+    },
+    {
+      "file": "src/quiet_index_500/expansions/common.py",
+      "sha256": "d7ba73f26f6e87160ffaebf85837c096018b199880f3261133be512355b902aa"
+    },
+    {
+      "file": "src/quiet_index_500/expansions/settings.py",
+      "sha256": "fa5a6fd0c93031d0e679b8b45497e0def4dc0035796852c1d0d36a5dec7b41d5"
+    },
+    {
+      "file": "src/quiet_index_500/expansions/measurements.py",
+      "sha256": "00f458c57a470ace88d1ab5f31e96f05a2750ca7dc22b2a5d902db1c5d430154"
+    },
+    {
+      "file": "src/quiet_index_500/expansions/rates.py",
+      "sha256": "07c45f88f8642404288b9f1dc0ce07afa5839c9a8ff89f3476709e01f8021eed"
+    }
+  ],
+  "sha256": "e1a56c99450c8846e6b1bb34ac516941c41a91b163522af305656356cc366c44",
+  "bytes": 25734775,
+  "rows": 18108,
+  "columns": [
+    "variant",
+    "window",
+    "rate_conditioned",
+    "formation_date",
+    "factor_measurement_cutoff",
+    "ticker",
+    "cik",
+    "is_representative",
+    "snapshot_weight",
+    "issuer_snapshot_weight",
+    "sector",
+    "industry_group",
+    "sector_name",
+    "industry_group_name",
+    "outcome_quarter",
+    "block",
+    "outcome_end",
+    "outcome_last_session",
+    "standard_n",
+    "joint_n",
+    "target_days",
+    "future_variance",
+    "eligible_exposure",
+    "exclusion_reason",
+    "log_market_cap",
+    "log_dollar_volume_60",
+    "log_dollar_volume_252",
+    "log_amihud_60",
+    "log_amihud_252",
+    "deterioration",
+    "own_history_activity",
+    "recent_activity_days",
+    "prior_activity_days",
+    "recent_amihud_days",
+    "prior_amihud_days",
+    "own_momentum",
+    "ff_alpha",
+    "ff_mkt_rf",
+    "ff_smb",
+    "ff_hml",
+    "ff_rmw",
+    "ff_cma",
+    "ff_mom",
+    "original_trailing_volatility",
+    "trailing_variance",
+    "trailing_volatility",
+    "log_trailing_variance",
+    "recent_variance",
+    "log_recent_ratio",
+    "original_lambda",
+    "market_n",
+    "market_negative_n",
+    "spy_beta",
+    "spy_downside_amplification",
+    "lambda",
+    "abs_lambda",
+    "rate_beta",
+    "smh_variance_component",
+    "fwl_error",
+    "projection_0",
+    "projection_1",
+    "projection_2",
+    "projection_3",
+    "projection_4",
+    "projection_5",
+    "projection_6",
+    "projection_7",
+    "F_coef_0",
+    "F_coef_1",
+    "F_coef_2",
+    "F_coef_3",
+    "F_coef_4",
+    "F_coef_5",
+    "F_coef_6",
+    "F_residual_variance",
+    "F_r2",
+    "FS_coef_0",
+    "FS_coef_1",
+    "FS_coef_2",
+    "FS_coef_3",
+    "FS_coef_4",
+    "FS_coef_5",
+    "FS_coef_6",
+    "FS_coef_7",
+    "FS_residual_variance",
+    "FS_r2",
+    "FZ_coef_0",
+    "FZ_coef_1",
+    "FZ_coef_2",
+    "FZ_coef_3",
+    "FZ_coef_4",
+    "FZ_coef_5",
+    "FZ_coef_6",
+    "FZ_coef_7",
+    "FZ_residual_variance",
+    "FZ_r2",
+    "FZS_coef_0",
+    "FZS_coef_1",
+    "FZS_coef_2",
+    "FZS_coef_3",
+    "FZS_coef_4",
+    "FZS_coef_5",
+    "FZS_coef_6",
+    "FZS_coef_7",
+    "FZS_coef_8",
+    "FZS_residual_variance",
+    "FZS_r2",
+    "log_future_variance"
+  ],
+  "note": "Step 0.5; results-informed historical study; FMP-derived=True; interpretation reserved for staged review.",
+  "licensed_market_cap_dependency": true,
+  "price_vintage": "2026-10-12",
+  "research_price_cutoff": "2026-09-30",
+  "factor_vintage": "202608",
+  "historical_evaluation_not_fresh_confirmation": true
+}

@@ -1,0 +1,63 @@
+{
+  "purpose": "Reconstruct saved forecasts without regression fitting or raw price collection",
+  "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+  "prepared_measurements_source": "reproduction/manifest.json",
+  "extracts": [
+    {
+      "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "source_path": "extensions/company_risk/results/semiconductor_training_preprocessing.csv",
+      "source_sha256": "7bc6de7dd257e3be3d4c7c59053a2beee9e74defcdbfa9c14898fce1d59cd1ae",
+      "output": "preprocessing.csv",
+      "selection": "run_id=semiconductor_main; formation_date=2024-12-31; model_id in [B,B+S]; all columns",
+      "rows": 29
+    },
+    {
+      "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "source_path": "extensions/company_risk/results/semiconductor_company_predictions.csv.gz",
+      "source_sha256": "f8cec377bdc4dfa1343ccf94ddbac560185aeb6ef94601ac20ffbe61a981df69",
+      "output": "predictions.csv",
+      "selection": "run_id=semiconductor_main; formation_date=2024-12-31; model_id in [B,B+S]; all columns",
+      "rows": 978
+    },
+    {
+      "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "source_path": "extensions/company_risk/results/semiconductor_company_quarterly_scores.csv",
+      "source_sha256": "084dead1a4d2139da5da3dc54ecb5b8f623d3481b462090bba4e531a1fc8cb32",
+      "output": "quarter_scores.csv",
+      "selection": "run_id=semiconductor_main; outcome_quarter=2025Q1; model_id in [B,B+S]; all columns",
+      "rows": 2
+    }
+  ],
+  "packaged_inputs": [
+    {
+      "path": "preprocessing.csv",
+      "location": "walkthrough",
+      "sha256": "9f1c655a9ae0facd28defde530db258033bd82156fa5a3112cd9b91aa5345fa8"
+    },
+    {
+      "path": "predictions.csv",
+      "location": "walkthrough",
+      "sha256": "e196ba0f4637e4f5f1aa6d17708e815a8a47c8efc095a656aadc74a6c494c0ee"
+    },
+    {
+      "path": "reproduction/company-risk/extensions/company_risk/data/processed/formation_measurements.csv",
+      "location": "package",
+      "sha256": "8ea496328166eef033df4178136d282713f107f4f9d5da762c35f88f9c3cdb34"
+    },
+    {
+      "path": "reproduction/company-risk/extensions/company_risk/data/processed/company_outcomes.csv",
+      "location": "package",
+      "sha256": "d6c61b6c697d22be18c45c9a7f04bbaf8aa289c7ab86feacceabe4e228ae11d4"
+    },
+    {
+      "path": "reproduction/company-risk/extensions/company_risk/specification/comparison_manifest.json",
+      "location": "package",
+      "sha256": "a23b315ffa1195e452d80cb4b9ea2f802fcd43a20aee3f9e9f2b11f3f0e445a7"
+    },
+    {
+      "path": "quarter_scores.csv",
+      "location": "walkthrough",
+      "sha256": "4e223a7eefead9a96171b15a0aa97685efdc0a90b416eefa31eaf551ba1cecd0"
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "format": "saved-reading-edition-v1",
+  "notebooks": [
+    {
+      "file": "company-risk-factor-benchmark.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "notebooks/08_forward_risk_tests.ipynb",
+      "scientific_study_commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "a7f380ab91bdabec1bfbf061c8774df845727baaf621e11830badb8727175ac8",
+          "source_sha256": "cc21a895867e18c751d36b43c6fe694f45b6ccd5245c9bf668c61ba9923e7650",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "a4a86fac9846000423f31e16327331cd7c7dbae77216ba20d7d62cba505fc675",
+          "source_sha256": "f8e0367176f65095d9160647eddc8fc03d9a3a73b07a1d550c69b8185b9fe6e3",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "0f466aebdd2af72c3b4e9b8e1ed55e2a11ef8f1982583d360c7f89c5a5cb3f3e",
+          "source_sha256": "3d325fd94e771665bb0f09f51a833c5e66e1637316deb0b36ad838407b34d1f7",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "410dfc3e924bd5cbeae3e4792e4c30d331fc03d3130cf5005985e0e37638e98c",
+          "source_sha256": "81bfb8106c0baee5c0ef68d39a0acdd9b2e595356f944c5ea27e86fcb0ed4265",
+          "outputs_sha256": "437014a857c25fcf2d02ba28ba77ca2781900d52f47b36c366355188413458b3"
+        },
+        {
+          "code_cell_index": 4,
+          "cell_object_sha256": "a7cf105f126fc229c51e034ca94ee3edbb313cc218d4d3b234b254b228f92886",
+          "source_sha256": "a5c231f4174c9034921307b7e2fb35ee94194dcb85a5e87ba1871ae79b531d88",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 5,
+          "cell_object_sha256": "4d373aede9d29c42e1f951a658d919bebc70f332d20c1ea63b80fd43a03b2d36",
+          "source_sha256": "540540e159794d2fae87c47a7a93ebb36e55a3ebac74c3a460e8d1369eab2204",
+          "outputs_sha256": "2c355dd0a5fd6d449ac640ab1ccca080a37d727f7f6ec482ad12d1c95e5f41d6"
+        },
+        {
+          "code_cell_index": 6,
+          "cell_object_sha256": "292dd9a9acfde93dc9cdec390d6a3975f0d047c97bcb88e9a4aaee141d14912e",
+          "source_sha256": "20650b84fba23fd34b0c2d1ad2dc37fd96ce912373c10f90e6e1430dc9b4285f",
+          "outputs_sha256": "be773cd5b34c8ab323d93dd6a6034b6fff95b4eb026d9fa28d6ad20ee8412fb6"
+        },
+        {
+          "code_cell_index": 7,
+          "cell_object_sha256": "6782f32e817c449847b21c5ca8e830bfa8a355e175d83aeead7ccf652623e0ce",
+          "source_sha256": "6a92a31acba45df2f2a820c9733c99a37eca947b6334f27c245977cdf25d377b",
+          "outputs_sha256": "e336754f06de1cfbbbf4f99c1bcf0dd219e032ddab0c3bd21812cf9807fc83af"
+        },
+        {
+          "code_cell_index": 8,
+          "cell_object_sha256": "0780a5bdd3e83239062abf2d21396253157cb8e03b9ed1a6b89bf32f1ba00562",
+          "source_sha256": "8ea3338eeff5868d38855bfb030625a512b50777b0b25dba7e3cd7cfedd73698",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 9,
+          "cell_object_sha256": "c8545d90cd2edee49dda2a3413fe74797f4094a28580a69bc7fbd65b59b86561",
+          "source_sha256": "ceb26b7103c60d5dbbdbf7e6a064cde281487c3f8d201e138fbc8b2de482bedc",
+          "outputs_sha256": "88276ffffd24fc04cd7815465f172501bda556c09a380f4bf858bf378c8f7f9f"
+        },
+        {
+          "code_cell_index": 10,
+          "cell_object_sha256": "ae0b19d8815ab045750204031ba6d0ae66b6b6e0d6c546f332a0a4d859bf8007",
+          "source_sha256": "7694f6f7e699ea1664bd9bde2fe1865fc7b034293440f05760ceb54061a41ea0",
+          "outputs_sha256": "7165473fe41abb5810a8b9f46fbbb8d24779e70b9899284af98aabe031bea75c"
+        },
+        {
+          "code_cell_index": 11,
+          "cell_object_sha256": "b4576b1a194e999e9fc9d87c0706b9f94ed57fd32ba60b16063ae6eb249724db",
+          "source_sha256": "b4c5d40bce262970db74bf8ca1eed327ffe8e88c46f5873e094bc1c185d83605",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 12,
+          "cell_object_sha256": "8c8a3b33cae2c0cd3b5fa39c4342a013ba1f4e8f9fa318277d9ee8c4b3494988",
+          "source_sha256": "8ae53af8ef9eea0887fb9430819ad0e338adb7593fa3e3e9e0eaf214ba9bcbd1",
+          "outputs_sha256": "68d14875a99df973d09e9ddc1333aab01a3f660286ee963ca183c4d31af8436a"
+        },
+        {
+          "code_cell_index": 13,
+          "cell_object_sha256": "1f6131ce2d57e698009a2f8ac716ca8a4a6946d1b365bc0c909b528c47ccb392",
+          "source_sha256": "60341dc06cc56c967644a8c48a52259cc3b871278edb455f1e1311d6b83e3235",
+          "outputs_sha256": "49671c7d0a68fdd2db1079ef75f2162f51985dd4ce84e1d018f98f4b89ff28f2"
+        },
+        {
+          "code_cell_index": 14,
+          "cell_object_sha256": "6503a4892ea355e93f76c6effd4ae3007474e674d3044f3bd1c85f4605a6c8f3",
+          "source_sha256": "5c6fd8a4d193c4e27e014f9db9bdddb19a8d2e9dafe3656ab744ba8dce47840b",
+          "outputs_sha256": "dc2f58b701d21594d11ff19024829df49181866cc9030026cd23558fcfc3116e"
+        },
+        {
+          "code_cell_index": 15,
+          "cell_object_sha256": "c9ad736f848ddea2e0de564acc3df3485ccf1ee2bf8b9f9b2754796f04440275",
+          "source_sha256": "d89bcae55ba670aaa96e3feedba721bc4781a11b9eb13def1b0a568260b19ee0",
+          "outputs_sha256": "efbef039ed1ac325eb547bfceb3b02557a1c25b63b8052ece93ee9906fcd86f5"
+        }
+      ]
+    },
+    {
+      "file": "portfolio-covariance.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "notebooks/09_covariance_evaluation.ipynb",
+      "scientific_study_commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "39a9fd8d14f6c30f32f2bc7a798be1ff1489459fa75ebfbcc65e1e18f78a99fc",
+          "source_sha256": "f48a042ab7ef5fcaf5a69fe075d50dca3d807150f71184b232fa214fec5e8834",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "fbd272d1cd4c8ccc31cad335e15f1837c700fea97c96c2dd1a7a84f7d3110a8e",
+          "source_sha256": "d73f82f547805d65de05eb82066de266fcb63c7b12ebdb84f7adefc6a929768f",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "af195c4b2f860864872b3dc7fef826cb35ee52bd1cff6d7b5d38d7fb4c4e2314",
+          "source_sha256": "94f6b98b94e753baaab26f2f3bb335acc0ed708dddead85a47835ee9bf7f0b0e",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "215e798fcb71c2f28252ac357798987b98d9cc92f7a48a8e83fa095ab3c1ef33",
+          "source_sha256": "928580aac1af52f034d8cb797a23e2bc3f5607ff7754b8f50291ce0454fdaf58",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 4,
+          "cell_object_sha256": "c2e4c07a1ad6fca8b03a771d7f8f42813eb45fd4c9ed02edbf5591722e0c84aa",
+          "source_sha256": "030dc9066242b92fa57d1c995c8aa71a98f2ea6b87de0961122e062bb6efc459",
+          "outputs_sha256": "ec5193b377f4242826a42d09f1682917e019a9f272f648c2a096b28a0ea4c0ef"
+        },
+        {
+          "code_cell_index": 5,
+          "cell_object_sha256": "794a7208e99c5b8a0b86c20b4770dbf69d0915b05a4fa7b4e51ac38e8bcdda4a",
+          "source_sha256": "852e7f3574a370d9935c6c4fe23beeb315c69c698c3c9e994208280ecfc304fc",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 6,
+          "cell_object_sha256": "53a3e18bc0d60b4af788e9cb93a22f67fc624114749e331da895c1163f34e39c",
+          "source_sha256": "93e7f6438f3e3c77f2248b4cb0335d8c15813992d37748d59ab85740934123ee",
+          "outputs_sha256": "3b5ecd0358ebedb973feb0090e6ae2da344b68bba061341978ccb4a315b5ba36"
+        },
+        {
+          "code_cell_index": 7,
+          "cell_object_sha256": "d1b94ecf92f27b3d2eb4047279dacb1cf41a92c060dd01daa5a6ed00bff28d0d",
+          "source_sha256": "4ee81b698aff7e1f7528f70c0888b0e104b80e58be71262c9a92f3e8f0d504e3",
+          "outputs_sha256": "0b74ed8278836316626080feb6f6b8879e78039d9da03637bf6af6ee27dc307c"
+        },
+        {
+          "code_cell_index": 8,
+          "cell_object_sha256": "cab3882f67819bbbaf2d4048d4b6bbefcf222ca6ff1032f9f5bde9c50524101c",
+          "source_sha256": "9e3cd85c1e9d3243a8facc390f04d3a70f3864b0592435d729f8d4d8c80eb744",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 9,
+          "cell_object_sha256": "102ed7f73f5b74252c2e04718aec395376d259c3f74c53b67cb65246bd45261b",
+          "source_sha256": "b79f7efacd2b49b928bd3a834b2ab7d0ec806f1249c5de862971590656022a43",
+          "outputs_sha256": "70aa279471af254df97ea8b76f1e00cf944adae3ef969a9af46ebeb89e13e8df"
+        },
+        {
+          "code_cell_index": 10,
+          "cell_object_sha256": "7c533868142d56e0108ba1f31bb499082843742a90b08597725e6344cc2c8620",
+          "source_sha256": "175e6d08d80cf688544cbd02d2b076b2465f3dc5edeefd837890848534dae100",
+          "outputs_sha256": "8a41cf630cf7b159fc0c9d1adb0ed26587cbaa2ba02cfc6896fc6cad793b0681"
+        }
+      ]
+    },
+    {
+      "file": "forecast-calibration-and-trading-activity.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/intermediate/notebooks/06_calibration_and_activity.ipynb",
+      "scientific_study_commit": "eab47102acb38d483271752934981277f5c90bec",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "4d3ea6be415d6166aec308d507a932803c22da53c587dc31eb0a63800903257a",
+          "source_sha256": "1652a7754a6520f6b9d628ea4fa470f3fb6cbb0a5331f0c2c7f8d51386e28803",
+          "outputs_sha256": "d792ca4a84ab05fea459aa5736f6cf35aca0f5eec7d153d1e5b188ecf45bb98d"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "dbe2bee91a0b7538b81b5a89af5850b5caea7ef9ed4974c915a059f9968ea16b",
+          "source_sha256": "e6ad8f2dd40440d0f78122bd4124e41402c87b841bf1cd3dd3a3514cb7747420",
+          "outputs_sha256": "ff9005480e495349b6df62ceb9d8f51ffa4767133f3b532a8e43a7979608fad1"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "83975c0db311fe1d463bb04802644350d2a806af32408bcbca7c4871d88df0ef",
+          "source_sha256": "39286dc47c066e3edd400bfe2a582152d66a018c92f1847f357fcebd46192e32",
+          "outputs_sha256": "7491956cf2386f5edb7206100224f456e093a7cba64cf42e8bfb86df1e83cc2c"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "3c7db858f1052d499cfd2d10ded4efacf8b1fd09975449baa986aea93f526a09",
+          "source_sha256": "4827cdc270a6cd0fc1384a59510f017ff79ee662bc20386aa80cbbf714005a85",
+          "outputs_sha256": "2ea7f2ff793265e649f40ea435ea6293f0e49f4e639618b705849559e2d92ba9"
+        },
+        {
+          "code_cell_index": 4,
+          "cell_object_sha256": "43aaf02c0f4e44b5a04ab62e7e5614f34576094c7c8bb2f6fc107d0bbb9a28a7",
+          "source_sha256": "c5a936be9e75de622d805bf9e23f40b9cb3e8961a2f4cdba20a2afad2901704b",
+          "outputs_sha256": "5b90b40aa46f263051c6bc39e0eb68aa0b9da5e94b1b4a87d9ebd181810a8392"
+        },
+        {
+          "code_cell_index": 5,
+          "cell_object_sha256": "e841c8a1acf961cc749a1268417414cc0dc84cce24de3130cf5e0db945066124",
+          "source_sha256": "a5d8eec8ba1c209189b07142778a4e67d377287d616e1a9b165c16aa723f1d81",
+          "outputs_sha256": "a55b8cf320c1ac5f14962419ae283a3a329a6220ea494ecf0b8aaec3097e5c0d"
+        },
+        {
+          "code_cell_index": 6,
+          "cell_object_sha256": "09a363807068c831eb9a7d0a85fe0542cfe7f4f6ae8954a47d06c2dd54e8e674",
+          "source_sha256": "061b72c2aa327ea399535134979957113a380fd9dc5c90723051957896dc38a4",
+          "outputs_sha256": "dac8e8960b7b4092e37e61d1836f2d55f6d1273cedd1cfcd28f306b24926c990"
+        },
+        {
+          "code_cell_index": 7,
+          "cell_object_sha256": "99d038ebeb4bb5c375e83a8576a3a81b26af3d4c0db8558371c61e04b24020cb",
+          "source_sha256": "10bf0bc511020b531f118d43735144431dc3894850e5bab296445c0d7cbe9313",
+          "outputs_sha256": "054e4bb36f4d876f3adfa6ffa0ac6838c23c150af2e1014a119049cea18af5cd"
+        },
+        {
+          "code_cell_index": 8,
+          "cell_object_sha256": "403f7f706a9822de4661b824ff3719b59273806c6a10552a184591145b0e7680",
+          "source_sha256": "579340f05b52ccbac0831844d35ee56169d73c3bd943748af6ecf63585ab7d7f",
+          "outputs_sha256": "26785c54e4f8f234ef2d23e34ae408cfb8e55565391c913a85d8842805593c81"
+        },
+        {
+          "code_cell_index": 9,
+          "cell_object_sha256": "e0a8c80333c187897246f7335bf4480a8aa568b4d3a699076fd2a7d7048ea694",
+          "source_sha256": "c3827313eff7eb9913b408dd3c67ca0664195cc86dcba7ce6e9208ebbfc2df43",
+          "outputs_sha256": "d4850da1759f667b3a6fc0bf87d1a3b00842abf101500a971d15c560879b36e2"
+        },
+        {
+          "code_cell_index": 10,
+          "cell_object_sha256": "6a5a32bf9c9882f88af93b54ec5bd2899b9998bfd254ffd9d332edeaf16106ee",
+          "source_sha256": "09adc295f4244b152a2820f65d6f4cd113778b883f17a4fd3ac4fe0b29e8f306",
+          "outputs_sha256": "7cd1632d1cfdd3a0de1a133649dfb3151a7f04b8866aa985a2d5d8a21387c1e7"
+        }
+      ]
+    },
+    {
+      "file": "interest-rates-and-covariance.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/intermediate/notebooks/08_rates_and_covariance.ipynb",
+      "scientific_study_commit": "eab47102acb38d483271752934981277f5c90bec",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "cb049ee8da06027d2ffb3f55c688d4c86361638165484c50b5bb5ea652496c39",
+          "source_sha256": "7b0b3361c73922508b7fbbd8fd4cdd39590a214350fef76c778603e3ec8c30ce",
+          "outputs_sha256": "d792ca4a84ab05fea459aa5736f6cf35aca0f5eec7d153d1e5b188ecf45bb98d"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "acd959e3de6b6233e6bae02d36918d67194e54f7ace87544c54239c12e563103",
+          "source_sha256": "360704008e3e08a5ac0d4b18f0f1d5cc940ba9accbe850be715903ac588c85b9",
+          "outputs_sha256": "310da564774009e975cfe8a261f0a87e72553d28dfb37bb97ed9f68cafd9b1f0"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "589f77451fd984a7526770122c6d9bda001b71f8ad802778de462c1195864368",
+          "source_sha256": "437e2795af14b31451d20f1bd25944d791e68671b3b817f57690cb3b76af821d",
+          "outputs_sha256": "321e4435c41e526ca7aa8f951ffe790868cf698cd5487fd350d0f03b33aef830"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "85f2a58a01e0ae5bc5672e488dfb641566aecd4d0bfe88c1ef4d6260f6693996",
+          "source_sha256": "2a56520a3368cbe384279bbcdb82e83af3cdd924330a7d6f186e4b9e7f4e2f7c",
+          "outputs_sha256": "92ff9d649345f4b241b7cbcd43d968cd05391938fe5d36d2e23d0a37501c99b1"
+        },
+        {
+          "code_cell_index": 4,
+          "cell_object_sha256": "c24ea9ac4fa1d81bd6ff0c5adaf933deab68910802d3d9952bf4961873a13dc7",
+          "source_sha256": "2fe655ca4ac303f1bae3e7a4fc20a1030a9a9e021692fa32ff8d410a2cbab468",
+          "outputs_sha256": "ea8a886b6d2a7039b34d79f5a84acadccf061e868ad40f3ecbed0b0b6ae77de6"
+        },
+        {
+          "code_cell_index": 5,
+          "cell_object_sha256": "8b9d8522ec579d5d0253c6d3385c1d96939d004b5af3f118eb50da38dff68d4e",
+          "source_sha256": "d55a291726d38486e3086f4c14a3c74f3e4ccbb0849638304ad1d5992893f61c",
+          "outputs_sha256": "7df48d2a70a4d986595b0339857f89be5020ed2b69b9fdd7c5bd10d226fb86e1"
+        },
+        {
+          "code_cell_index": 6,
+          "cell_object_sha256": "17cd14303309bec060200a39a98310b44584b7f65ba486d7b1bfeaea409d43fd",
+          "source_sha256": "6493ea91cc3fc93d11270c1d090c89f0a6ce0074a5650a20a841cf49a471de2e",
+          "outputs_sha256": "d7cb786099820c7b7f61a949f1ad5ad4f2bffc2d31a8124523c61be48e5dd0fb"
+        },
+        {
+          "code_cell_index": 7,
+          "cell_object_sha256": "48dd0355d4d3ac12f2b6c63e5a860059a3f97647ff23f4a30ba977763bf6b4d9",
+          "source_sha256": "829d30646f20788299be02b243fc9f9161916de0d748bc96143a6a6b5115d94c",
+          "outputs_sha256": "11be834da06e72a21636735ab9cf450a6579ddc46239d6f04fd54f0193778cd1"
+        },
+        {
+          "code_cell_index": 8,
+          "cell_object_sha256": "77875da78a298e9554fcd3b2acd7f926f77a8a18c6a9e57de8fc37255292d7d1",
+          "source_sha256": "bd169df063b8f3220f9c25254db85e08971993d1de438c39c6c7f655616cd693",
+          "outputs_sha256": "9523f6d10fe03a83707beeacab5157837bf7467111b4e4e761bf0adda92cae6e"
+        },
+        {
+          "code_cell_index": 9,
+          "cell_object_sha256": "6a641bd5de10a14b4477903c5b23ab84fce42ad2133ffe4393a5eff516351c7d",
+          "source_sha256": "8bb80b6fd53a6c62299e77664827d3c876d124c7a39db712806f5e93a23d5146",
+          "outputs_sha256": "3ab1d8c9b3ba51ccc0ca9c0d61a1de5de8d0a85009a926600c587d62bd174f01"
+        },
+        {
+          "code_cell_index": 10,
+          "cell_object_sha256": "c7b42ed6f2948d854bcb127f2a19f9bcef4f0d6b27a679aee6a30b8008a5a27a",
+          "source_sha256": "fe32d21e99285e19c6640b61d9f7e318860d6bad245dafc250dda0c6cb9c96c9",
+          "outputs_sha256": "fcc2c64d01054d7546edf30a51b0858f380e2a9be163d16bb5ae014bccaf501b"
+        },
+        {
+          "code_cell_index": 11,
+          "cell_object_sha256": "21854414884d37f78847302ae37009668efc85a73c89077c563b589acd98c855",
+          "source_sha256": "09adc295f4244b152a2820f65d6f4cd113778b883f17a4fd3ac4fe0b29e8f306",
+          "outputs_sha256": "16c1e739d8910eab069fa9dd8f149b6154d1336529ef499d57564c450b0f8cb2"
+        }
+      ]
+    },
+    {
+      "file": "recent-risk-and-liquidity.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/notebooks/03_liquidity_recency_calibration.ipynb",
+      "scientific_study_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "e4f5d3d5ceb6429e5cf2820b56c9448aff48ab04074719e27098af666aff390f",
+          "source_sha256": "02948cb5dbfd22d0172602daed33c0d98cd2c1fc73aadb1cb1dc22453de1e797",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "12bdc79ec8a6756a00b903d69590a53cf7fe7a15736f0c883acad58246834657",
+          "source_sha256": "a563d708b00e306a55d32eb32ee4321c76a94a47b32bd3f302f7b2c25e0c69a3",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "47badae86fe1f46f57eadf12125ad9924af2708d68079c968682a25ba852b017",
+          "source_sha256": "60e351eba063db288fe17e2411c41aa3d3aff0ada89eecfe3ef90a963a71a7d1",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "36db928531709f7e4362992d2201ba0e7752ad9e14e91ef7315d1190abab762b",
+          "source_sha256": "8573ebd705979eb27efbf4711cc7016ad99970a934f35b5317912f5215570c6d",
+          "outputs_sha256": "a46661595df7c24457944dd28c9f37c0fb2b1e67253e1b45aefdbcaa432b5a3b"
+        },
+        {
+          "code_cell_index": 4,
+          "cell_object_sha256": "abbf115a72d342728f83f7df92140b45f08c205b5011f929707afebbe4597446",
+          "source_sha256": "85fa70a607a3dc0ec73f5106f1938982fca91b28e0fbb1e4f92713a8e1b6d898",
+          "outputs_sha256": "41f873584a4fdba2fb024edbe31f003ee4eaf40cc87ce2085e8fef857a5bc5f6"
+        },
+        {
+          "code_cell_index": 5,
+          "cell_object_sha256": "f730b02084ceaf11d6d4a992bc883afbf57fe8102233f21aaeeeab60a27260b9",
+          "source_sha256": "01bce76ddd40ad0e5c5712bc44698af5cc47e9f6ae3e0d47099c3dffbfd6e3ee",
+          "outputs_sha256": "27f118621dbe5062e783a17b0e5a8639ff597311b6ff9266bc3cf25b04644e34"
+        }
+      ]
+    },
+    {
+      "file": "semiconductor-exposure.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/notebooks/04_semiconductor_representation.ipynb",
+      "scientific_study_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "7e61a08ac34aaa9f75c4deaef3b95c33b4dd55ab8a5b5c07ea1ca4309bb6e997",
+          "source_sha256": "1b68ee5f714e5bead97cf61173fbbade98806aec9880e5112b4005bee891e862",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "d40f4f0eedfae465b0e85dafe96ac0bdf294566ea4529ab06ce381506b80bad2",
+          "source_sha256": "01bce76ddd40ad0e5c5712bc44698af5cc47e9f6ae3e0d47099c3dffbfd6e3ee",
+          "outputs_sha256": "5c21eec3ef6b6b3147c8306e4d5a01ead49cab227a7cf826ee2b8ae03b2a8096"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "1767e213dfad76ae015ecd80205c90b76ffe272b97880bbf01bcbab7fe8159e7",
+          "source_sha256": "12d2ea7cd13d02c4d1b7fcb3602c548e9a4d11d0a435dd4bb93bea60e6f2802c",
+          "outputs_sha256": "20a0094752631b1e94472e6b10c5dec4a7a33549773d78b7f8f900e354455715"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "cc1dc2cbb596b65bf048cd29dbde4c6d1a2091d7a1c9d15faee9ae9e7545dd05",
+          "source_sha256": "01bce76ddd40ad0e5c5712bc44698af5cc47e9f6ae3e0d47099c3dffbfd6e3ee",
+          "outputs_sha256": "5c21eec3ef6b6b3147c8306e4d5a01ead49cab227a7cf826ee2b8ae03b2a8096"
+        }
+      ]
+    },
+    {
+      "file": "portfolio-risk-and-treasury-controls.ipynb",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/notebooks/06_portfolio_treasury_application.ipynb",
+      "scientific_study_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "code_cells": [
+        {
+          "code_cell_index": 0,
+          "cell_object_sha256": "7a51eb0654f4402d4428458f4245e6253ed691151968e762b1e796f850ab7dbe",
+          "source_sha256": "595f3c300f757c6cb3b9388e37051df8b2d61e66d2652856c625e051b277424e",
+          "outputs_sha256": "324b83852fd638bd2501dd3c6567b0220bb1a7d2639b6d2ffb1b6a8ad26ceab5"
+        },
+        {
+          "code_cell_index": 1,
+          "cell_object_sha256": "f3e0c83d8bb517f30df807969d169a7c80f845bd5de96e739d84c8effb33c485",
+          "source_sha256": "3cd0a6ea64ec326184222b38259fc23fdde0ae3616b664cdf1dcc55297aa74a6",
+          "outputs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "code_cell_index": 2,
+          "cell_object_sha256": "47144893c8c7627f3d4d69fcbffeb88be6b52c65399061e33a73532c771ba3f6",
+          "source_sha256": "2affb61fb44089542494ed637a36eb74aefc59db6f33b4cd238060b37a4f0c36",
+          "outputs_sha256": "b1882e8ea56e77deb8e88b5b4c69048084df336f16ca8e7dc74d315701bda018"
+        },
+        {
+          "code_cell_index": 3,
+          "cell_object_sha256": "f002d5138149495df6b3570fa405bbcc2ae0719e1dafae7793600e17f0d3dc10",
+          "source_sha256": "bf8b908d08fd1fef2030d5a5f46c81e01fa5205a4ec64257bf68ddd8ea861c64",
+          "outputs_sha256": "1d8b7d84ab678d1eba6ec4da9295119424a556f62e786fa02e5c5b811bd9c50c"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "file": "assets/forecast-calibration-and-trading-activity-calibration_horizons.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/intermediate/figures/calibration_horizons.png",
+      "sha256": "57a29a230ccfdee6aad7629790e9e5b39a15b3900464d4b6884bcd1946c2b21a"
+    },
+    {
+      "file": "assets/forecast-calibration-and-trading-activity-calibration_error_components.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/intermediate/figures/calibration_error_components.png",
+      "sha256": "d141d3f708cd417257d64b1adc371cb53c3608dd88aa419b692006820a002063"
+    },
+    {
+      "file": "assets/interest-rates-and-covariance-portfolio_dependence.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/intermediate/figures/portfolio_dependence.png",
+      "sha256": "d82ff6498b5fb1085c6ed44554e482aefb4030ea1b333f825633bf33b8fca6c1"
+    },
+    {
+      "file": "assets/recent-risk-and-liquidity-calibration_and_horizons.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/figures/calibration_and_horizons.png",
+      "sha256": "75b26fea4a2d3f56eacaf180809363fd875b6be6cc02f400b2a044c210737e85"
+    },
+    {
+      "file": "assets/recent-risk-and-liquidity-quarter_stability.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/figures/quarter_stability.png",
+      "sha256": "a305a26a3195515465fccc4c1abbcdeedf706879d5af09c886bcd6e664c05849"
+    },
+    {
+      "file": "assets/semiconductor-exposure-semiconductor_sensitivities.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/figures/semiconductor_sensitivities.png",
+      "sha256": "43787cbd66cb1032f826b7f9292e0b4eaddde0772b9fa12bd0dcc4ecfae5e092"
+    },
+    {
+      "file": "assets/portfolio-risk-and-treasury-controls-portfolio_contrasts.png",
+      "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "source_path": "docs/study-guides/revised-company-risk/figures/portfolio_contrasts.png",
+      "sha256": "4804c8461b6287e85c2909e9fadda74026c36503cb27b7622f54e79ada22eb95"
+    }
+  ]
+}

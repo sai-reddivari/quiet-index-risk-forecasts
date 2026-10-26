@@ -1,0 +1,15 @@
+{
+  "source": "WBD: Financial Modeling Prep end-of-day (dividend-adjusted and as-traded). PSKY: Yahoo Finance via yfinance under SKYD.",
+  "download_arguments": {
+    "from": "2015-01-01",
+    "to": "2026-10-12"
+  },
+  "pulled_at_utc": "2026-10-14T02:09:40+00:00",
+  "rows_by_ticker": {
+    "PSKY": 2961,
+    "WBD": 2956
+  },
+  "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+  "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e",
+  "note": "Saved as downloaded, full window. The same-security history windows in notebooks/02_prices.ipynb decide which rows are used. Vendor data: the CSV is git-ignored; this manifest is committed."
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": "company-risk-extension-v1",
+  "research_spec_id": "revised-2026-10-16",
+  "artifact": "extensions/company_risk/data/processed/company_outcomes.csv",
+  "sha256": "d6c61b6c697d22be18c45c9a7f04bbaf8aa289c7ab86feacceabe4e228ae11d4",
+  "rows": 36000,
+  "generated_at": "2026-10-17T00:28:45.593860+00:00",
+  "generator": "02_formation_measurements.ipynb",
+  "generator_code_sha256": "3957d545be42bb2326d8145978316da1f82847c9054e9b6d02e4a65dcabeb374",
+  "input_freeze_sha256": "6f63485d94cb575ff2f7d1e73fd64a04cb84f1508f8b31dd34fc40e792608ae4",
+  "inputs": [
+    {
+      "path": "data/raw/ff5_factors_daily_crsp_202608.manifest.json",
+      "sha256": "ea3984f520882239ff85558e522c33239155cb800eb6b65781626f664de99d19"
+    },
+    {
+      "path": "data/raw/ff5_factors_daily_crsp_202608.zip",
+      "sha256": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186"
+    },
+    {
+      "path": "data/raw/ivv_holdings_2026-09-30.csv",
+      "sha256": "ab722f6637e678015a3052085c371eb4f29bd65f1c15c3b17b090d1edb099fe8"
+    },
+    {
+      "path": "data/raw/ivv_holdings_2026-09-30.manifest.json",
+      "sha256": "953c91c6d15372f15db34fda9ace009362b6271d0dd5c99c9f07b7062c786cd7"
+    },
+    {
+      "path": "data/raw/market_cap_fmp_through_2026-10-12.csv",
+      "sha256": "f73492a70b0633be40c258cb4fc8c42ddcad82f1e56ed2122999cdf34cc1cfca"
+    },
+    {
+      "path": "data/raw/market_cap_fmp_through_2026-10-12.manifest.json",
+      "sha256": "372a68be82606d45274fe2cac11a4faaadadeb9ce9b96bfae6ee97a8ccbcd286"
+    },
+    {
+      "path": "data/raw/momentum_factor_daily_crsp_202608.manifest.json",
+      "sha256": "6c9c1cdb1994c7955d46da80e9c6911a597988451728d6d527df973c675098ed"
+    },
+    {
+      "path": "data/raw/momentum_factor_daily_crsp_202608.zip",
+      "sha256": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78"
+    },
+    {
+      "path": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "path": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "path": "data/raw/prices_smh_through_2026-10-12.csv",
+      "sha256": "d12bfb600f6037b14a8ad0b8f05f3f15c9d1e67b756a241269e2912f3f7641b4"
+    },
+    {
+      "path": "data/raw/prices_smh_through_2026-10-12.manifest.json",
+      "sha256": "742f81e5c826ab8069dab75c68387648228bdf6cc040b4ddef0c928ac850346d"
+    },
+    {
+      "path": "data/raw/prices_spy_through_2026-10-12.csv",
+      "sha256": "fb6005f6431884c37bbeb28280b7fb0e3d964f9102d6e18d89168ffa0492ed44"
+    },
+    {
+      "path": "data/raw/prices_spy_through_2026-10-12.manifest.json",
+      "sha256": "ea6b803416d4ed25f671e3b4ee99b72f79f5d51a2a2df210501de3b93489e4ab"
+    },
+    {
+      "path": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "path": "data/raw/prices_supplement_through_2026-10-12.manifest.json",
+      "sha256": "919b92d6de515a15be8cae2d5408073ba4402ca8f20d67c1b53a279d15b527ad"
+    },
+    {
+      "path": "data/raw/prices_through_2026-10-12.manifest.json",
+      "sha256": "f8145d86b8c2c4fcb949ce4daf5541a97fbdbafca07f109aaebf8f7cb8dae869"
+    },
+    {
+      "path": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "path": "data/raw/sec_company_tickers_2026-10-09.json",
+      "sha256": "a9595d33a34615553ee706c95458fff0bb9fec9642a9d61710f3e5dbd45ca23e"
+    },
+    {
+      "path": "data/raw/sec_company_tickers_2026-10-09.manifest.json",
+      "sha256": "2a0ea3b62cbe4cb3a03b2811d0d8f5dcab69207c158ec82daa7368fcaa47ebd4"
+    },
+    {
+      "path": "data/raw/wikipedia_gics_structure_as_of_2026-09-30.manifest.json",
+      "sha256": "a03637b24a1cbf29cc91539d5f52ffd80abf7389fd91eace3388528291cd3293"
+    },
+    {
+      "path": "data/raw/wikipedia_sp500_list_as_of_2026-09-30.manifest.json",
+      "sha256": "bcc92765145c6d464a24c8d6823731719e3a79fbd430dcc9de4e698ec134415f"
+    },
+    {
+      "path": "data/processed/ff5_factors_daily_2015-01-02_2026-08-31.csv",
+      "sha256": "4f0aab85501cd632a63397c6b1fb6bc4dd4b5dab73411ffc999bf48486968527"
+    },
+    {
+      "path": "data/processed/ff5_factors_daily_2015-01-02_2026-08-31.manifest.json",
+      "sha256": "dfb4dbe8f518c63a51b44b6c4eef679dee5a1f0e185cff82aadb038fc255cb8b"
+    },
+    {
+      "path": "data/processed/ff5_mom_factors_daily_2015-01-02_2026-08-31.csv",
+      "sha256": "63326418d32ce11eb07de8087960755bc49d80538ce39255971615a17fd11f78"
+    },
+    {
+      "path": "data/processed/ff5_mom_factors_daily_2015-01-02_2026-08-31.manifest.json",
+      "sha256": "22f7e1f3441aa9c008982033e726ac3045a91f2f99b077f74400a26b8c491596"
+    },
+    {
+      "path": "data/processed/issuer_market_cap_through_2026-10-12.manifest.json",
+      "sha256": "744eeff9b7bbed3d7940152d230f0938ab7ce2123e8bf5421905675fef22d20e"
+    },
+    {
+      "path": "data/processed/ivv_equity_holdings_2026-09-30.csv",
+      "sha256": "c64b3e43616769ebb9cdc497963f9dee6c53f1f8691d084becc27d0a1056c164"
+    },
+    {
+      "path": "data/processed/ivv_equity_holdings_2026-09-30.manifest.json",
+      "sha256": "91dfdddc15992fc9975d727b0ad457e3f5584be07232ebca518df4cb47e396a5"
+    },
+    {
+      "path": "data/processed/market_cap_same_security_through_2026-10-12.manifest.json",
+      "sha256": "3f976b4036cfd8c1fd7a7a03429cf7b3c6f77f323cf0a7e98be03f1d647c549e"
+    },
+    {
+      "path": "data/processed/portfolio_exclusions_through_2026-10-12.csv",
+      "sha256": "dd9354f8d073a6ca78e9bf214701d1766c4c6167c5cb7ce497198db3fb87b4d9"
+    },
+    {
+      "path": "data/processed/portfolio_exclusions_through_2026-10-12.manifest.json",
+      "sha256": "62f63bb4a596975bc6a6dc859f08c9ab53be2d2a7d5ba832af09f331709c6283"
+    },
+    {
+      "path": "data/processed/same_security_rules_2026-09-30.csv",
+      "sha256": "0f5f79d9f9c8c59c3f1480c0ec9da5e7031bee5d123e134beb3ed0621901968e"
+    },
+    {
+      "path": "data/processed/same_security_rules_2026-09-30.manifest.json",
+      "sha256": "54fa15633c04e24aa2ef4fdac6085e7db6bd4ac374ffad95b71f919160d0b3b8"
+    },
+    {
+      "path": "data/processed/sector_weights_2026-09-30.csv",
+      "sha256": "407aa7ae36364808c8f7c7e34b4ba6b613203f0590d0cb95cab8a5c06005c4be"
+    },
+    {
+      "path": "data/processed/sector_weights_2026-09-30.manifest.json",
+      "sha256": "84b8f6996652ea1792ede39d895eced4661ddab4c21f4eddd462847569fd8f24"
+    },
+    {
+      "path": "data/processed/smh_daily_returns_through_2026-10-12.csv",
+      "sha256": "434f1504b8e39f23fa9664d095ab7c37632502ebbc7091cefec433c6e7b2edcd"
+    },
+    {
+      "path": "data/processed/smh_daily_returns_through_2026-10-12.manifest.json",
+      "sha256": "f75150a17f841d1462f5c80e9aa8379a89f56d02f6c21cb46310dd2cdc31ce50"
+    },
+    {
+      "path": "data/processed/snapshot_portfolio_daily_returns_through_2026-10-12.csv",
+      "sha256": "7251a9edfa59ec03891e3283f0a08e0bf9952d50aca7cf6e54cbd924fc0b26f6"
+    },
+    {
+      "path": "data/processed/snapshot_portfolio_daily_returns_through_2026-10-12.manifest.json",
+      "sha256": "7351906bdd78f16447360ae9ff5bfa0d011f6fc5d0069fd3e05ba20663834cfd"
+    },
+    {
+      "path": "data/processed/spy_daily_returns_through_2026-10-12.csv",
+      "sha256": "923422e8b84729c7b6eacf54a374279a347cad0e4d70deabbb9929094046b24e"
+    },
+    {
+      "path": "data/processed/spy_daily_returns_through_2026-10-12.manifest.json",
+      "sha256": "1d5afa760e39d1115bb22248de17bac7b1782daf0c8e664903d2c0e02ad82fa0"
+    },
+    {
+      "path": "data/processed/ticker_data_flags_through_2026-10-12.csv",
+      "sha256": "c74ae696e37f7aa0c176b800b9108519182147efbef331e9ea7eede1afcef961"
+    },
+    {
+      "path": "data/processed/ticker_data_flags_through_2026-10-12.manifest.json",
+      "sha256": "50e20d312b7eac7e54c9e7de6316168273f68bac6d0612f09981def6f3202813"
+    },
+    {
+      "path": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    },
+    {
+      "path": "data/processed/universe_tickers_2026-09-30.manifest.json",
+      "sha256": "676c11420727fa23cdd1fea7edb7d7bdbdf4219e173a03d2c0683348fdf7a2d2"
+    },
+    {
+      "path": "data/processed/universe_weights_2026-09-30.csv",
+      "sha256": "89c624ebfb8d9a29c3e7ec9f4165847301b6742ffc9d4d573070b4925a55711c"
+    },
+    {
+      "path": "data/processed/universe_weights_2026-09-30.manifest.json",
+      "sha256": "3b73f6824189ac2c3ebeaedf6d65fb64cbb7bb2a809bc56a61e3f85a472dcceb"
+    },
+    {
+      "path": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+      "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9"
+    },
+    {
+      "path": "data/corrections/extreme_event_ledger_2026-09-30.manifest.json",
+      "sha256": "1a49e78785e699958634b845d9f3a2ca559ef7d4e7b0c65ffa1d317598328757"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/__init__.py",
+      "sha256": "55ca05640568d582aa1da87f1f54836de79cee944c97131dd4589c3f506ac894"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/build.py",
+      "sha256": "7c64853672986a812a291c9986ac2bb864d99cddb41a2f9bfb56aec08516df3a"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/calendar.py",
+      "sha256": "3a71aacf99b4e2b8d223568dde8a108f94fc628ab4578a10f53ce635bfd40a71"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "79ad3f0ae6cadcc1d1ce000a15ed24fd4c224ace042bc9750ffdb88f7f7a031d"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/eligibility.py",
+      "sha256": "712eea26dd9b7f979b8b28ae64f9f3fa442dce886173f47a3cc1326ed0f314ea"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/inventory.py",
+      "sha256": "66fe42ebc27787958902e0005fd50a8ed207907497185ae58391418829e9ea82"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "ff28147820dea77fd4229f7dfad0bb6b6dba8d964f2e2753428c295c10a5e8d8"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "02aefaa647c4a63da273972c2e4eb05d0ddb89566732c0456d647165621eaaef"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "f04824fe1f82e7c50201206f942d1b1abea98f314bcfee657b240678d970747b"
+    },
+    {
+      "path": "src/quiet_index_500/foundation/validation.py",
+      "sha256": "ff51334319b67ef299f90ea41bf69165db01fbfeb2fa5e045ca2143ee1887c25"
+    }
+  ],
+  "units": "daily decimal returns; natural-log annual volatility; annual variance 252; Amihud per USD million",
+  "missing_rule": "Missing stays missing; per-feature reason columns; no fill or return bridging",
+  "licensed_lineage": "FMP capitalization-derived fields retain licensed-source lineage",
+  "environment": {
+    "python": "3.14.8",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  }
+}

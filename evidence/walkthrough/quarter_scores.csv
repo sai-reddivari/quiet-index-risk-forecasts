@@ -1,0 +1,3 @@
+run_id,sample_id,model_id,outcome_quarter,block_label,n_companies,represented_snapshot_weight,mse_log_vol,mean_error,squared_mean_error,centered_error_dispersion,qlike_variance
+semiconductor_main,9b3bea886522f5bf,B,2025Q1,confirmation,489,0.989295069980301,0.0689716149018279,-0.1350417939228479,0.0182362861059009,0.050735328795927,0.1211804573435735
+semiconductor_main,9b3bea886522f5bf,B+S,2025Q1,confirmation,489,0.989295069980301,0.0690277892216178,-0.1345499813449557,0.0181036974799279,0.0509240917416899,0.121518096466644

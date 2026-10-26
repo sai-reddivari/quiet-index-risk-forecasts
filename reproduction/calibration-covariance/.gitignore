@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+
+# raw vendor prices are never committed; their manifests are
+data/raw/prices_*.csv
+# vendor market cap (Financial Modeling Prep) is licensed data; its manifest is committed
+data/raw/market_cap_*.csv
+# derived from licensed market-cap data; manifests are committed
+data/processed/*market_cap*.csv
+# FMP-derived research results are committable by Sai's instruction, 14 October 2026.
+# Existing results/licensed paths retain their source label for continuity.
+
+# Local study planning and review material on foundation-only.
+/opus-handoff.md
+/plan.md
+/hypotheses-2026-10-14-v1.md
+/hypotheses-2026-10-14-v1.sha256
+/results-informed-review-2026-10-14.md
+/results-informed-review-2026-10-14/

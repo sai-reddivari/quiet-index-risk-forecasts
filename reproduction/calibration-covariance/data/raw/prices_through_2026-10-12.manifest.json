@@ -1,0 +1,38 @@
+{
+  "source": "Yahoo Finance via yfinance",
+  "yfinance_version": "1.7.0",
+  "download_arguments": {
+    "start": "2015-01-01",
+    "end_exclusive": "2026-10-14",
+    "auto_adjust": false,
+    "actions": false
+  },
+  "pulled_at_utc": "2026-10-14T01:16:23+00:00",
+  "universe_file": "data/processed/universe_tickers_2026-09-30.csv",
+  "tickers_requested": 503,
+  "tickers_without_data": [],
+  "first_session": "2015-01-02",
+  "last_session": "2026-10-12",
+  "sessions": 2961,
+  "files": [
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "field": "Adj Close",
+      "meaning": "adjusted for splits and dividends; total-return basis",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "field": "Close",
+      "meaning": "adjusted for splits only; the price for market cap",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "field": "Volume",
+      "meaning": "shares traded, as Yahoo reports them",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    }
+  ],
+  "note": "Raw vendor data, saved as downloaded. The CSVs are git-ignored; this manifest is committed. Zero-volume days are kept here and treated as missing when loaded."
+}

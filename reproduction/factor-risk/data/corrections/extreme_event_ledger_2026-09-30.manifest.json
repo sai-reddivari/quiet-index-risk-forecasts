@@ -1,0 +1,87 @@
+{
+  "file": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+  "built_by": "foundation finishing step, 14 Oct 2026 (decisions from the 13 Oct 2026 event reviews and verifier votes)",
+  "built_at_utc": "2026-10-14T04:40:18+00:00",
+  "inputs": [
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/corrections/extreme_event_evidence.md",
+      "sha256": "89ce94c24fb7f7927a855a1e241c8112898991bfa9eadc1f76c193b8a8968d51"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "f204fc9af23616be87073b1d33be2cc51de0e96176834f3cf3bb6d6d7ecef8a9"
+    },
+    {
+      "file": "notebooks/03b_foundation_validation.ipynb",
+      "module": "quiet_index_500.foundation.corrections",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "9767bfd54f67eac23a7b03da56361b49a989380bb349d4edb8399fb5a9cfc08d"
+    },
+    {
+      "file": "src/quiet_index_500/notebook_source.py",
+      "sha256": "661a6ddb7af7b2d48f88ffc6912b2bfaf798ef1590d2dfb0ca6881b6e21298a6"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "03a18932b5a50a43b77e10a17aac0e4e0e4ec3662c99f893544f1d35ca8f4395"
+    },
+    {
+      "file": "notebooks/02_prices.ipynb",
+      "module": "quiet_index_500.foundation.loader",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "85e5364c0efa0b293b0899984e19e2a5474e5d4564ee1f2aae995a9a8eb90cf8"
+    }
+  ],
+  "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9",
+  "bytes": 1792,
+  "rows": 13,
+  "columns": [
+    "ticker",
+    "event_date",
+    "classification",
+    "treatment",
+    "factor",
+    "price_date",
+    "price_value",
+    "quarantine_dates",
+    "corrected_return",
+    "evidence_reference"
+  ],
+  "note": "Extreme-event ledger: one row per daily simple return beyond +-50% in the cleaned adjusted close through 2026-09-30 (13 events), in the format corrections.py defines. Twelve verified market moves are retained unchanged; corrected_return on those rows is the downloaded return at full precision from the loader. DHR 2016-07-05 (Fortive spin-off, booked twice by the vendor) is a corporate-action discrepancy: every DHR adjusted close before 2016-07-05 is multiplied by factor so the ex-date return equals the distribution-inclusive return (80.40 + 0.5 x 48.60) / 102.32 - 1. Evidence per event in extreme_event_evidence.md. No quarantines.",
+  "events": 13,
+  "decided": "2026-10-13",
+  "classifications": {
+    "verified_market_move": 12,
+    "corporate_action_discrepancy": 1
+  },
+  "price_vintage": "2026-10-12",
+  "research_price_cutoff": "2026-09-30",
+  "source_code_at_build": [
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "79ad3f0ae6cadcc1d1ce000a15ed24fd4c224ace042bc9750ffdb88f7f7a031d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "ff28147820dea77fd4229f7dfad0bb6b6dba8d964f2e2753428c295c10a5e8d8"
+    }
+  ],
+  "source_layout_migration": {
+    "date": "2026-10-16",
+    "note": "Calculation source moved into notebook cells. Original build-time fingerprints retained in source_code_at_build; corrections and loader ASTs verified identical to study-v1.0. Ledger bytes, decisions, input fingerprints and original build date unchanged."
+  }
+}

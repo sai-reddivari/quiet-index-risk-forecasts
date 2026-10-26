@@ -1,0 +1,14 @@
+ticker,event_date,classification,treatment,factor,price_date,price_value,quarantine_dates,corrected_return,evidence_reference
+AMD,2016-04-22,verified_market_move,retain,,,,,0.5229008335186689,data/corrections/extreme_event_evidence.md#amd-2016-04-22
+DHR,2016-07-05,corporate_action_discrepancy,back_adjust_before_date,1.5755357848732043,,,,0.023260359655981278,data/corrections/extreme_event_evidence.md#dhr-2016-07-05
+PCG,2019-01-14,verified_market_move,retain,,,,,-0.5235928902060426,data/corrections/extreme_event_evidence.md#pcg-2019-01-14
+PCG,2019-01-24,verified_market_move,retain,,,,,0.7459324410828678,data/corrections/extreme_event_evidence.md#pcg-2019-01-24
+APA,2020-03-09,verified_market_move,retain,,,,,-0.5386473995875369,data/corrections/extreme_event_evidence.md#apa-2020-03-09
+OXY,2020-03-09,verified_market_move,retain,,,,,-0.5201379099996899,data/corrections/extreme_event_evidence.md#oxy-2020-03-09
+TRGP,2020-03-09,verified_market_move,retain,,,,,-0.5290739727194218,data/corrections/extreme_event_evidence.md#trgp-2020-03-09
+HOOD,2021-08-04,verified_market_move,retain,,,,,0.5040598405375005,data/corrections/extreme_event_evidence.md#hood-2021-08-04
+CVNA,2023-06-08,verified_market_move,retain,,,,,0.5602061422645068,data/corrections/extreme_event_evidence.md#cvna-2023-06-08
+GL,2024-04-11,verified_market_move,retain,,,,,-0.5314018885337114,data/corrections/extreme_event_evidence.md#gl-2024-04-11
+BE,2024-11-15,verified_market_move,retain,,,,,0.59186745592793,data/corrections/extreme_event_evidence.md#be-2024-11-15
+ECHO,2025-08-26,verified_market_move,retain,,,,,0.7024765850287811,data/corrections/extreme_event_evidence.md#echo-2025-08-26
+MRNA,2026-08-19,verified_market_move,retain,,,,,1.7696951623021624,data/corrections/extreme_event_evidence.md#mrna-2026-08-19

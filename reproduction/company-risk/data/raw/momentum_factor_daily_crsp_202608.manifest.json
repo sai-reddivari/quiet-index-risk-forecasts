@@ -1,0 +1,13 @@
+{
+  "source": "Kenneth R. French Data Library, Momentum Factor (Mom), daily",
+  "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip",
+  "vintage_line": "This file was created by using the 202608 CRSP database.  It",
+  "csv_member": "F-F_Momentum_Factor_daily.csv",
+  "csv_timestamp_inside_zip": "2026-09-24T09:14:28",
+  "http_last_modified": "Fri, 25 Sep 2026 21:55:02 GMT",
+  "pulled_at_utc": "2026-10-14T02:10:28+00:00",
+  "file": "data/raw/momentum_factor_daily_crsp_202608.zip",
+  "sha256": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78",
+  "bytes": 85269,
+  "note": "Values in the source are percent per day; missing values are -99.99 or -999. Prior return runs from day -250 to day -21. Public data; the zip is committed as downloaded."
+}

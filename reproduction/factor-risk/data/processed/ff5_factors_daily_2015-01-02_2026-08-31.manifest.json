@@ -1,0 +1,29 @@
+{
+  "file": "data/processed/ff5_factors_daily_2015-01-02_2026-08-31.csv",
+  "built_by": "notebooks/03_factors.ipynb",
+  "built_at_utc": "2026-10-14T04:47:40+00:00",
+  "inputs": [
+    {
+      "file": "data/raw/ff5_factors_daily_crsp_202608.zip",
+      "sha256": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    }
+  ],
+  "sha256": "4f0aab85501cd632a63397c6b1fb6bc4dd4b5dab73411ffc999bf48486968527",
+  "rows": 2932,
+  "columns": [
+    "date",
+    "mkt_rf",
+    "smb",
+    "hml",
+    "rmw",
+    "cma",
+    "rf"
+  ],
+  "factor_data_last_date": "2026-08-31",
+  "estimation_cutoff": "2026-08-31",
+  "note": "Fama-French five factors (2x3), daily, decimal units. mkt_rf is the CRSP value-weighted market minus rf, not SPY. smb is the five-factor definition. rf is the one-month T-bill as a simple daily rate. Rows run from the first study session to the estimation cutoff, the earlier of the last factor date and the last price session."
+}

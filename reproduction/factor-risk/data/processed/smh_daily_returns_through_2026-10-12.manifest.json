@@ -1,0 +1,93 @@
+{
+  "file": "data/processed/smh_daily_returns_through_2026-10-12.csv",
+  "built_by": "notebooks/02_prices.ipynb",
+  "built_at_utc": "2026-10-17T00:00:55+00:00",
+  "inputs": [
+    {
+      "file": "data/raw/prices_smh_through_2026-10-12.csv",
+      "sha256": "d12bfb600f6037b14a8ad0b8f05f3f15c9d1e67b756a241269e2912f3f7641b4"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "file": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/settings.py",
+      "sha256": "b39dbe9d43cdb44a017892f0fcc1bc6e9009e7c6a595281c74d1d8e317f6ec8f"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "03a18932b5a50a43b77e10a17aac0e4e0e4ec3662c99f893544f1d35ca8f4395"
+    },
+    {
+      "file": "notebooks/02_prices.ipynb",
+      "module": "quiet_index_500.foundation.loader",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "85e5364c0efa0b293b0899984e19e2a5474e5d4564ee1f2aae995a9a8eb90cf8"
+    },
+    {
+      "file": "src/quiet_index_500/notebook_source.py",
+      "sha256": "661a6ddb7af7b2d48f88ffc6912b2bfaf798ef1590d2dfb0ca6881b6e21298a6"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "f204fc9af23616be87073b1d33be2cc51de0e96176834f3cf3bb6d6d7ecef8a9"
+    },
+    {
+      "file": "notebooks/03b_foundation_validation.ipynb",
+      "module": "quiet_index_500.foundation.corrections",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "9767bfd54f67eac23a7b03da56361b49a989380bb349d4edb8399fb5a9cfc08d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "d3a4afecf67e4c014403d9251ac1dd8a1ce1e1ce6a17589774eaea32859a2652"
+    },
+    {
+      "file": "notebooks/01_ivv_holdings.ipynb",
+      "module": "quiet_index_500.foundation.same_security",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "7d1f8b88758bd9749bcc4c26ad507dea38400d24efd2198fa67d64b3807e0a96"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "5ef05dffffdf51c50a36ea8ee5df0b87a0522dad19577479191f6c6785ac2767"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/build.py",
+      "sha256": "4590479db30e7b608aee577427254453495612269245d8623e50d5c37d3a80c7"
+    },
+    {
+      "file": "notebooks/02_prices.ipynb",
+      "module": "quiet_index_500.foundation.build",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "fab0838dcca6e6388c7155e578fe4cade2877bcd04c997e4ea44a4e425cf43dd"
+    }
+  ],
+  "sha256": "434f1504b8e39f23fa9664d095ab7c37632502ebbc7091cefec433c6e7b2edcd",
+  "bytes": 95661,
+  "rows": 2960,
+  "columns": [
+    "date",
+    "smh_return"
+  ],
+  "note": "Daily simple total return of SMH from Yahoo's adjusted close, over the sessions of the stock pull."
+}

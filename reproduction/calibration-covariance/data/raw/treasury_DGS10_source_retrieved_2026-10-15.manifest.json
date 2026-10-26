@@ -1,0 +1,11 @@
+{
+  "file": "treasury_DGS10_source_retrieved_2026-10-15.html",
+  "source_url": "https://fred.stlouisfed.org/data/DGS10",
+  "series": "DGS10",
+  "units": "percent per annum",
+  "retrieved_at_utc": "2026-10-15T19:34:29.631161+00:00",
+  "user_facing_retrieval_date": "2026-10-15",
+  "sha256": "fa03ec9f306650620d17610c14dd7f14cc8778fc1e1172a071166b462e07d8a4",
+  "bytes": 706515,
+  "note": "Official full-observation HTML retained unchanged; downstream parser restricts to research cutoff."
+}

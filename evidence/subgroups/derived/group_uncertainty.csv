@@ -1,0 +1,145 @@
+run_id,group,family,metric,signflip_two_sided_p,paired_twoquarter_signflip_p,circular4_low,circular4_high,circular4_draws,holm_p,family_size
+original_504_semiconductor,Communication Services,sector,quarterly_gain_pct,0.21875,0.25,-3.4688567435643751,-0.38035009843026352,36,1,11
+original_504_semiconductor,Consumer Discretionary,sector,quarterly_gain_pct,0.46875,0.5,-0.049776436428129907,1.8823407514910671,36,1,11
+original_504_semiconductor,Consumer Staples,sector,quarterly_gain_pct,0.03125,0.25,1.64044000323988,2.2024641683290853,36,0.34375,11
+original_504_semiconductor,Energy,sector,quarterly_gain_pct,0.34375,0.75,0.059568129979736026,2.4157651735246328,36,1,11
+original_504_semiconductor,Financials,sector,quarterly_gain_pct,0.03125,0.25,-4.1813595606888709,-1.9511319208695406,36,0.34375,11
+original_504_semiconductor,Health Care,sector,quarterly_gain_pct,0.03125,0.25,2.6648302007314735,4.1279971871631371,36,0.34375,11
+original_504_semiconductor,Industrials,sector,quarterly_gain_pct,0.53125,0.5,-0.29898835129748152,1.0027464877412013,36,1,11
+original_504_semiconductor,Information Technology,sector,quarterly_gain_pct,0.03125,0.25,-4.4812240711108799,-3.4411724243201682,36,0.34375,11
+original_504_semiconductor,Materials,sector,quarterly_gain_pct,0.03125,0.25,2.189454586967682,4.5433526920501608,36,0.34375,11
+original_504_semiconductor,Real Estate,sector,quarterly_gain_pct,0.25,0.5,-0.09398883526456045,2.5067281700726114,36,1,11
+original_504_semiconductor,Utilities,sector,quarterly_gain_pct,0.71875,1,-1.1698769272119878,2.2990744898413431,36,1,11
+original_504_semiconductor_industry,Communication Services,sector,quarterly_gain_pct,0.03125,0.25,-1.7734720058055142,-0.56362430941919284,36,0.34375,11
+original_504_semiconductor_industry,Consumer Discretionary,sector,quarterly_gain_pct,0.78125,0.75,-0.32542804841906514,0.55742448987381199,36,1,11
+original_504_semiconductor_industry,Consumer Staples,sector,quarterly_gain_pct,0.625,0.75,-0.26933655725939465,0.051370513948201225,36,1,11
+original_504_semiconductor_industry,Energy,sector,quarterly_gain_pct,0.125,0.5,0.40033334141902949,2.0056378040890999,36,0.75,11
+original_504_semiconductor_industry,Financials,sector,quarterly_gain_pct,0.03125,0.25,-1.7322361723335347,-0.97965282029433165,36,0.34375,11
+original_504_semiconductor_industry,Health Care,sector,quarterly_gain_pct,0.03125,0.25,0.71252875870192811,1.3546722547853138,36,0.34375,11
+original_504_semiconductor_industry,Industrials,sector,quarterly_gain_pct,0.65625,0.5,-0.17145809930102321,0.37744187672587826,36,1,11
+original_504_semiconductor_industry,Information Technology,sector,quarterly_gain_pct,0.03125,0.25,-1.8254980398757716,-0.85614137722181327,36,0.34375,11
+original_504_semiconductor_industry,Materials,sector,quarterly_gain_pct,0.03125,0.25,1.0684133671431726,2.3072204488484997,36,0.34375,11
+original_504_semiconductor_industry,Real Estate,sector,quarterly_gain_pct,0.21875,0.5,-0.019480201870093194,0.87074067957464896,36,1,11
+original_504_semiconductor_industry,Utilities,sector,quarterly_gain_pct,0.34375,0.25,0.20267681614060781,1.3566886712067485,36,1,11
+revised_semiconductor_industry_group,Communication Services,sector,quarterly_gain_pct,0.03125,0.25,-1.1709606766439569,-0.32421442816331547,36,0.34375,11
+revised_semiconductor_industry_group,Consumer Discretionary,sector,quarterly_gain_pct,1,1,-0.21251336118711747,0.26148563665171254,36,1,11
+revised_semiconductor_industry_group,Consumer Staples,sector,quarterly_gain_pct,0.28125,0.5,-0.22602177554115876,-0.0018554444849732277,36,1,11
+revised_semiconductor_industry_group,Energy,sector,quarterly_gain_pct,0.21875,0.5,0.0075938536073179609,0.89751604590141987,36,1,11
+revised_semiconductor_industry_group,Financials,sector,quarterly_gain_pct,0.03125,0.25,-0.85469780891246694,-0.36026994242136179,36,0.34375,11
+revised_semiconductor_industry_group,Health Care,sector,quarterly_gain_pct,0.0625,0.25,0.19865802225025148,0.57729536144237126,36,0.4375,11
+revised_semiconductor_industry_group,Industrials,sector,quarterly_gain_pct,0.875,0.75,-0.14028233327997441,0.18024154237306733,36,1,11
+revised_semiconductor_industry_group,Information Technology,sector,quarterly_gain_pct,0.03125,0.25,-1.047312255169031,-0.37698738530349668,36,0.34375,11
+revised_semiconductor_industry_group,Materials,sector,quarterly_gain_pct,0.03125,0.25,0.32928211192781248,1.1539667900788366,36,0.34375,11
+revised_semiconductor_industry_group,Real Estate,sector,quarterly_gain_pct,0.1875,0.5,-0.012280349711032543,0.48857142198903425,36,1,11
+revised_semiconductor_industry_group,Utilities,sector,quarterly_gain_pct,0.40625,0.25,0.012259075439364527,0.67572822380482744,36,1,11
+revised_semiconductor_main,Communication Services,sector,quarterly_gain_pct,0.0625,0.25,-2.1420070451359279,-0.84733755289341484,36,0.5,11
+revised_semiconductor_main,Consumer Discretionary,sector,quarterly_gain_pct,0.75,1,-0.36024388756449716,0.81423951408854855,36,1,11
+revised_semiconductor_main,Consumer Staples,sector,quarterly_gain_pct,0.1875,0.5,0.13982138855751114,0.5361256532924652,36,0.9375,11
+revised_semiconductor_main,Energy,sector,quarterly_gain_pct,0.84375,0.75,-0.7020409536565998,1.1114359208921201,36,1,11
+revised_semiconductor_main,Financials,sector,quarterly_gain_pct,0.03125,0.25,-2.3507122168614107,-0.57525089587606848,36,0.34375,11
+revised_semiconductor_main,Health Care,sector,quarterly_gain_pct,0.03125,0.25,0.61977351012296256,1.5710234953306366,36,0.34375,11
+revised_semiconductor_main,Industrials,sector,quarterly_gain_pct,0.71875,1,-0.27770242951965834,0.11295607540692242,36,1,11
+revised_semiconductor_main,Information Technology,sector,quarterly_gain_pct,0.03125,0.25,-2.277640148585367,-1.7041634756252502,36,0.34375,11
+revised_semiconductor_main,Materials,sector,quarterly_gain_pct,0.125,0.5,0.27566052633863425,1.5928369490033487,36,0.875,11
+revised_semiconductor_main,Real Estate,sector,quarterly_gain_pct,0.125,0.25,0.099702037102646454,1.3853491051860454,36,0.875,11
+revised_semiconductor_main,Utilities,sector,quarterly_gain_pct,0.875,1,-0.57363464964399336,0.80937935134442196,36,1,11
+original_504_semiconductor,Automobiles & Components,industry_group,quarterly_gain_pct,0.8125,1,-13.830928612336205,7.9940790711515159,36,1,25
+original_504_semiconductor,Banks,industry_group,quarterly_gain_pct,0.0625,0.25,-2.9610495598047795,-1.2663644036529411,36,1,25
+original_504_semiconductor,Capital Goods,industry_group,quarterly_gain_pct,0.125,0.25,0.29610036455742894,1.5535696477472012,36,1,25
+original_504_semiconductor,Commercial & Professional Services,industry_group,quarterly_gain_pct,0.15625,0.5,-2.8388826658595043,-0.49169148009850405,36,1,25
+original_504_semiconductor,Consumer Discretionary Distribution & Retail,industry_group,quarterly_gain_pct,0.21875,0.5,0.12780825075793706,5.5671177072509241,36,1,25
+original_504_semiconductor,Consumer Durables & Apparel,industry_group,quarterly_gain_pct,0.78125,1,-1.2082282554438855,0.62926327566421902,36,1,25
+original_504_semiconductor,Consumer Services,industry_group,quarterly_gain_pct,0.90625,1,-2.4141120854199158,2.0922606820547984,36,1,25
+original_504_semiconductor,Consumer Staples Distribution & Retail,industry_group,quarterly_gain_pct,0.875,0.75,-3.0231540018739356,1.5166291577379716,36,1,25
+original_504_semiconductor,Energy,industry_group,quarterly_gain_pct,0.34375,0.75,0.059568129979736026,2.4157651735246328,36,1,25
+original_504_semiconductor,Equity Real Estate Investment Trusts (REITs),industry_group,quarterly_gain_pct,0.125,0.5,0.55542561984547822,2.7608720820461095,36,1,25
+original_504_semiconductor,Financial Services,industry_group,quarterly_gain_pct,0.03125,0.25,-5.2317745517132925,-2.2734743299668274,36,0.78125,25
+original_504_semiconductor,"Food, Beverage & Tobacco",industry_group,quarterly_gain_pct,0.03125,0.25,2.7408467925359865,3.8945429735534143,36,0.78125,25
+original_504_semiconductor,Health Care Equipment & Services,industry_group,quarterly_gain_pct,0.03125,0.25,2.0140210217276606,2.9724142091840111,36,0.78125,25
+original_504_semiconductor,Household & Personal Products,industry_group,quarterly_gain_pct,0.5625,0.75,-0.29922228201858925,1.2743119384355097,36,1,25
+original_504_semiconductor,Insurance,industry_group,quarterly_gain_pct,0.1875,0.5,-3.5198965447480752,-0.91938673586430175,36,1,25
+original_504_semiconductor,Materials,industry_group,quarterly_gain_pct,0.03125,0.25,2.189454586967682,4.5433526920501608,36,0.78125,25
+original_504_semiconductor,Media & Entertainment,industry_group,quarterly_gain_pct,0.09375,0.25,-6.1515346398978039,-1.014782983235462,36,1,25
+original_504_semiconductor,"Pharmaceuticals, Biotechnology & Life Sciences",industry_group,quarterly_gain_pct,0.03125,0.25,3.3038765008329296,6.3437758940972158,36,0.78125,25
+original_504_semiconductor,Real Estate Management & Development,industry_group,quarterly_gain_pct,0.125,0.25,-5.0663053994436469,-0.51077592125165894,36,1,25
+original_504_semiconductor,Semiconductors & Semiconductor Equipment,industry_group,quarterly_gain_pct,0.0625,0.25,6.528137450642074,16.568138685165088,36,1,25
+original_504_semiconductor,Software & Services,industry_group,quarterly_gain_pct,0.03125,0.25,-11.536576530422058,-5.9741470839996387,36,0.78125,25
+original_504_semiconductor,Technology Hardware & Equipment,industry_group,quarterly_gain_pct,0.03125,0.25,-8.3514983628833797,-5.1098047405856812,36,0.78125,25
+original_504_semiconductor,Telecommunication Services,industry_group,quarterly_gain_pct,0.4375,0.75,-0.088332456376955637,1.464824848081131,36,1,25
+original_504_semiconductor,Transportation,industry_group,quarterly_gain_pct,0.6875,0.75,-2.1185956222900848,1.0128320201481829,36,1,25
+original_504_semiconductor,Utilities,industry_group,quarterly_gain_pct,0.71875,1,-1.1698769272119878,2.2990744898413431,36,1,25
+original_504_semiconductor_industry,Automobiles & Components,industry_group,quarterly_gain_pct,0.6875,0.75,-1.7294317498668075,3.2715155034321453,36,1,25
+original_504_semiconductor_industry,Banks,industry_group,quarterly_gain_pct,0.375,0.75,-1.286868210587603,0.14905762868858452,36,1,25
+original_504_semiconductor_industry,Capital Goods,industry_group,quarterly_gain_pct,0.3125,0.5,0.005327891493700586,0.78989178604617027,36,1,25
+original_504_semiconductor_industry,Commercial & Professional Services,industry_group,quarterly_gain_pct,0.46875,0.5,-0.88531928129502557,0.23503884311102535,36,1,25
+original_504_semiconductor_industry,Consumer Discretionary Distribution & Retail,industry_group,quarterly_gain_pct,0.4375,0.75,-0.38377116844331516,1.5965213266410863,36,1,25
+original_504_semiconductor_industry,Consumer Durables & Apparel,industry_group,quarterly_gain_pct,0.34375,0.5,0.24051113461746199,1.2038947708914405,36,1,25
+original_504_semiconductor_industry,Consumer Services,industry_group,quarterly_gain_pct,0.65625,1,-1.754082405140577,0.62163809026477579,36,1,25
+original_504_semiconductor_industry,Consumer Staples Distribution & Retail,industry_group,quarterly_gain_pct,0.90625,0.75,-1.3618312775015982,0.88015211025505224,36,1,25
+original_504_semiconductor_industry,Energy,industry_group,quarterly_gain_pct,0.125,0.5,0.40033334141902949,2.0056378040890999,36,1,25
+original_504_semiconductor_industry,Equity Real Estate Investment Trusts (REITs),industry_group,quarterly_gain_pct,0.03125,0.25,0.27991468753660104,0.95858719215451738,36,0.78125,25
+original_504_semiconductor_industry,Financial Services,industry_group,quarterly_gain_pct,0.03125,0.25,-2.0010144499378226,-0.896092560006161,36,0.78125,25
+original_504_semiconductor_industry,"Food, Beverage & Tobacco",industry_group,quarterly_gain_pct,0.65625,1,-0.2039007871281186,0.44659417221446435,36,1,25
+original_504_semiconductor_industry,Health Care Equipment & Services,industry_group,quarterly_gain_pct,0.03125,0.25,0.56970229163994646,1.0080542297452457,36,0.78125,25
+original_504_semiconductor_industry,Household & Personal Products,industry_group,quarterly_gain_pct,0.125,0.25,-0.77146661828839758,-0.35011834065575698,36,1,25
+original_504_semiconductor_industry,Insurance,industry_group,quarterly_gain_pct,0.03125,0.25,-2.0400328210097944,-1.2251895769171408,36,0.78125,25
+original_504_semiconductor_industry,Materials,industry_group,quarterly_gain_pct,0.03125,0.25,1.0684133671431726,2.3072204488484997,36,0.78125,25
+original_504_semiconductor_industry,Media & Entertainment,industry_group,quarterly_gain_pct,0.03125,0.25,-2.5194729240172222,-0.60028195087591252,36,0.78125,25
+original_504_semiconductor_industry,"Pharmaceuticals, Biotechnology & Life Sciences",industry_group,quarterly_gain_pct,0.0625,0.25,0.67861515024573893,2.0329390531822202,36,1,25
+original_504_semiconductor_industry,Real Estate Management & Development,industry_group,quarterly_gain_pct,0.03125,0.25,-3.7472451773641553,-1.6719401129654479,36,0.78125,25
+original_504_semiconductor_industry,Semiconductors & Semiconductor Equipment,industry_group,quarterly_gain_pct,0.34375,1,-3.9897708184418708,0.70147525659711762,36,1,25
+original_504_semiconductor_industry,Software & Services,industry_group,quarterly_gain_pct,0.34375,1,-0.89054827860373897,0.096145619377235342,36,1,25
+original_504_semiconductor_industry,Technology Hardware & Equipment,industry_group,quarterly_gain_pct,0.0625,0.25,-3.5370788881073949,-1.0626963322050216,36,1,25
+original_504_semiconductor_industry,Telecommunication Services,industry_group,quarterly_gain_pct,0.3125,0.5,-1.25346016503299,0.12833227310001902,36,1,25
+original_504_semiconductor_industry,Transportation,industry_group,quarterly_gain_pct,0.1875,0.5,-1.7992157234065982,-0.21759660037205594,36,1,25
+original_504_semiconductor_industry,Utilities,industry_group,quarterly_gain_pct,0.34375,0.25,0.20267681614060781,1.3566886712067485,36,1,25
+revised_semiconductor_industry_group,Automobiles & Components,industry_group,quarterly_gain_pct,0.34375,0.5,-0.24185883581085924,2.0879287423838679,36,1,25
+revised_semiconductor_industry_group,Banks,industry_group,quarterly_gain_pct,0.8125,1,-0.6157375464414574,0.42570887128762214,36,1,25
+revised_semiconductor_industry_group,Capital Goods,industry_group,quarterly_gain_pct,0.5625,0.5,-0.11504680090053303,0.38104521511251521,36,1,25
+revised_semiconductor_industry_group,Commercial & Professional Services,industry_group,quarterly_gain_pct,0.21875,0.5,-0.64472843264961277,-0.059770175537124187,36,1,25
+revised_semiconductor_industry_group,Consumer Discretionary Distribution & Retail,industry_group,quarterly_gain_pct,0.71875,1,-0.34398026951866878,0.73285899485549644,36,1,25
+revised_semiconductor_industry_group,Consumer Durables & Apparel,industry_group,quarterly_gain_pct,0.8125,0.75,-0.19602373066096579,0.41466037573083531,36,1,25
+revised_semiconductor_industry_group,Consumer Services,industry_group,quarterly_gain_pct,0.625,1,-0.91542879982265291,0.43698523610690565,36,1,25
+revised_semiconductor_industry_group,Consumer Staples Distribution & Retail,industry_group,quarterly_gain_pct,0.96875,1,-0.43852834753851644,0.4910255520667105,36,1,25
+revised_semiconductor_industry_group,Energy,industry_group,quarterly_gain_pct,0.21875,0.5,0.0075938536073179609,0.89751604590141987,36,1,25
+revised_semiconductor_industry_group,Equity Real Estate Investment Trusts (REITs),industry_group,quarterly_gain_pct,0.09375,0.5,0.091391107432876997,0.49663226750675477,36,1,25
+revised_semiconductor_industry_group,Financial Services,industry_group,quarterly_gain_pct,0.0625,0.25,-0.86317956672188689,-0.3008446343667367,36,1,25
+revised_semiconductor_industry_group,"Food, Beverage & Tobacco",industry_group,quarterly_gain_pct,0.96875,0.75,-0.37819293051622072,0.3695530265761573,36,1,25
+revised_semiconductor_industry_group,Health Care Equipment & Services,industry_group,quarterly_gain_pct,0.1875,0.5,0.076750143467760448,0.37729088968396524,36,1,25
+revised_semiconductor_industry_group,Household & Personal Products,industry_group,quarterly_gain_pct,0.34375,0.5,-0.7885536109108533,-0.054910768816210508,36,1,25
+revised_semiconductor_industry_group,Insurance,industry_group,quarterly_gain_pct,0.03125,0.25,-1.28333148373838,-0.59206742026606851,36,0.78125,25
+revised_semiconductor_industry_group,Materials,industry_group,quarterly_gain_pct,0.03125,0.25,0.32928211192781248,1.1539667900788366,36,0.78125,25
+revised_semiconductor_industry_group,Media & Entertainment,industry_group,quarterly_gain_pct,0.15625,0.25,-1.3648643578591606,-0.22720695918381303,36,1,25
+revised_semiconductor_industry_group,"Pharmaceuticals, Biotechnology & Life Sciences",industry_group,quarterly_gain_pct,0.09375,0.25,0.13420620895564905,1.0402945899867957,36,1,25
+revised_semiconductor_industry_group,Real Estate Management & Development,industry_group,quarterly_gain_pct,0.5,0.5,-0.68509266622473308,5.483753836419285,36,1,25
+revised_semiconductor_industry_group,Semiconductors & Semiconductor Equipment,industry_group,quarterly_gain_pct,0.4375,0.75,-1.9145729669140918,0.50606564257033315,36,1,25
+revised_semiconductor_industry_group,Software & Services,industry_group,quarterly_gain_pct,0.21875,0.25,-0.58684352342435631,-0.0059337365968332393,36,1,25
+revised_semiconductor_industry_group,Technology Hardware & Equipment,industry_group,quarterly_gain_pct,0.0625,0.25,-1.7937637031706772,-0.52244005257313153,36,1,25
+revised_semiconductor_industry_group,Telecommunication Services,industry_group,quarterly_gain_pct,0.25,0.5,-1.1518250862321651,0.030358877128403676,36,1,25
+revised_semiconductor_industry_group,Transportation,industry_group,quarterly_gain_pct,0.34375,0.5,-0.80121524673779254,0.011231825198083186,36,1,25
+revised_semiconductor_industry_group,Utilities,industry_group,quarterly_gain_pct,0.40625,0.25,0.012259075439364527,0.67572822380482744,36,1,25
+revised_semiconductor_main,Automobiles & Components,industry_group,quarterly_gain_pct,0.84375,1,-4.3489803563861713,5.4043570252122244,36,1,25
+revised_semiconductor_main,Banks,industry_group,quarterly_gain_pct,0.96875,1,-1.2230064544756112,1.1939887391537383,36,1,25
+revised_semiconductor_main,Capital Goods,industry_group,quarterly_gain_pct,0.3125,0.5,0.060603612459789555,0.45792587529995499,36,1,25
+revised_semiconductor_main,Commercial & Professional Services,industry_group,quarterly_gain_pct,0.09375,0.25,-2.3741352503903768,-0.270792487980131,36,1,25
+revised_semiconductor_main,Consumer Discretionary Distribution & Retail,industry_group,quarterly_gain_pct,0.53125,0.75,-0.88788650983647177,2.8390879015394654,36,1,25
+revised_semiconductor_main,Consumer Durables & Apparel,industry_group,quarterly_gain_pct,0.5,0.5,-1.3915568373998861,-0.063291827502040182,36,1,25
+revised_semiconductor_main,Consumer Services,industry_group,quarterly_gain_pct,0.90625,1,-1.4838496891943966,1.1051400744038136,36,1,25
+revised_semiconductor_main,Consumer Staples Distribution & Retail,industry_group,quarterly_gain_pct,0.78125,0.75,-0.87531168585809171,0.46196347681187883,36,1,25
+revised_semiconductor_main,Energy,industry_group,quarterly_gain_pct,0.84375,0.75,-0.7020409536565998,1.1114359208921201,36,1,25
+revised_semiconductor_main,Equity Real Estate Investment Trusts (REITs),industry_group,quarterly_gain_pct,0.0625,0.25,0.34737157323100698,1.3941999192747769,36,1,25
+revised_semiconductor_main,Financial Services,industry_group,quarterly_gain_pct,0.0625,0.25,-2.5089813811749822,-0.83284118604592661,36,1,25
+revised_semiconductor_main,"Food, Beverage & Tobacco",industry_group,quarterly_gain_pct,0.03125,0.25,0.64219070040397619,1.5798829932731344,36,0.78125,25
+revised_semiconductor_main,Health Care Equipment & Services,industry_group,quarterly_gain_pct,0.0625,0.25,0.26140728429456189,0.72326197315947038,36,1,25
+revised_semiconductor_main,Household & Personal Products,industry_group,quarterly_gain_pct,0.28125,0.25,-1.0085240217725686,-0.037960476131068649,36,1,25
+revised_semiconductor_main,Insurance,industry_group,quarterly_gain_pct,0.1875,0.25,-2.839470639980946,-0.66267758512368824,36,1,25
+revised_semiconductor_main,Materials,industry_group,quarterly_gain_pct,0.125,0.5,0.27566052633863425,1.5928369490033487,36,1,25
+revised_semiconductor_main,Media & Entertainment,industry_group,quarterly_gain_pct,0.125,0.25,-3.2191275075979746,-0.75113897025043108,36,1,25
+revised_semiconductor_main,"Pharmaceuticals, Biotechnology & Life Sciences",industry_group,quarterly_gain_pct,0.0625,0.25,0.90583931243532501,3.0671142538218179,36,1,25
+revised_semiconductor_main,Real Estate Management & Development,industry_group,quarterly_gain_pct,0.6875,0.5,-0.67235320889086203,5.6584973417219926,36,1,25
+revised_semiconductor_main,Semiconductors & Semiconductor Equipment,industry_group,quarterly_gain_pct,0.125,0.5,1.7181795974032441,8.6027783821297099,36,1,25
+revised_semiconductor_main,Software & Services,industry_group,quarterly_gain_pct,0.125,0.25,-6.2460313125743987,-1.5072179309764586,36,1,25
+revised_semiconductor_main,Technology Hardware & Equipment,industry_group,quarterly_gain_pct,0.03125,0.25,-3.771846591200033,-2.7935585447570057,36,0.78125,25
+revised_semiconductor_main,Telecommunication Services,industry_group,quarterly_gain_pct,1,1,-0.94791779980065938,0.84316947745557613,36,1,25
+revised_semiconductor_main,Transportation,industry_group,quarterly_gain_pct,0.25,0.5,-1.8082603517336211,-0.13422791783423152,36,1,25
+revised_semiconductor_main,Utilities,industry_group,quarterly_gain_pct,0.875,1,-0.57363464964399336,0.80937935134442196,36,1,25

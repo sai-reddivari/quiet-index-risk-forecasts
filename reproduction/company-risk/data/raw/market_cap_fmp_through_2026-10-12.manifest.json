@@ -1,0 +1,17 @@
+{
+  "source": "Financial Modeling Prep, historical-market-capitalization endpoint (paid plan)",
+  "source_url": "https://financialmodelingprep.com/stable/historical-market-capitalization",
+  "download_arguments": {
+    "from": "2015-01-01",
+    "to": "2026-10-12"
+  },
+  "pulled_at_utc": "2026-10-14T01:48:16+00:00",
+  "tickers_requested": 503,
+  "tickers_failed": {},
+  "first_date": "2015-01-02",
+  "last_date": "2026-10-12",
+  "rows": 2961,
+  "file": "data/raw/market_cap_fmp_through_2026-10-12.csv",
+  "sha256": "f73492a70b0633be40c258cb4fc8c42ddcad82f1e56ed2122999cdf34cc1cfca",
+  "note": "Total market cap in USD, shares outstanding times close, as FMP computes it; not float-adjusted. Share counts step at FMP's update dates. Multi-class issuers carry the issuer total on every class (GOOGL and GOOG are identical), so summing classes double-counts. Licensed vendor data: the CSV is git-ignored."
+}

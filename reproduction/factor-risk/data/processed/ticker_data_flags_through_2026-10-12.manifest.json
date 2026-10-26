@@ -1,0 +1,123 @@
+{
+  "file": "data/processed/ticker_data_flags_through_2026-10-12.csv",
+  "built_by": "notebooks/02_prices.ipynb",
+  "built_at_utc": "2026-10-17T00:00:57+00:00",
+  "inputs": [
+    {
+      "file": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    },
+    {
+      "file": "data/processed/universe_weights_2026-09-30.csv",
+      "sha256": "89c624ebfb8d9a29c3e7ec9f4165847301b6742ffc9d4d573070b4925a55711c"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "file": "data/raw/market_cap_fmp_through_2026-10-12.csv",
+      "sha256": "f73492a70b0633be40c258cb4fc8c42ddcad82f1e56ed2122999cdf34cc1cfca"
+    },
+    {
+      "file": "data/processed/same_security_rules_2026-09-30.csv",
+      "sha256": "0f5f79d9f9c8c59c3f1480c0ec9da5e7031bee5d123e134beb3ed0621901968e"
+    },
+    {
+      "file": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+      "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/settings.py",
+      "sha256": "b39dbe9d43cdb44a017892f0fcc1bc6e9009e7c6a595281c74d1d8e317f6ec8f"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "03a18932b5a50a43b77e10a17aac0e4e0e4ec3662c99f893544f1d35ca8f4395"
+    },
+    {
+      "file": "notebooks/02_prices.ipynb",
+      "module": "quiet_index_500.foundation.loader",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "85e5364c0efa0b293b0899984e19e2a5474e5d4564ee1f2aae995a9a8eb90cf8"
+    },
+    {
+      "file": "src/quiet_index_500/notebook_source.py",
+      "sha256": "661a6ddb7af7b2d48f88ffc6912b2bfaf798ef1590d2dfb0ca6881b6e21298a6"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "f204fc9af23616be87073b1d33be2cc51de0e96176834f3cf3bb6d6d7ecef8a9"
+    },
+    {
+      "file": "notebooks/03b_foundation_validation.ipynb",
+      "module": "quiet_index_500.foundation.corrections",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "9767bfd54f67eac23a7b03da56361b49a989380bb349d4edb8399fb5a9cfc08d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "d3a4afecf67e4c014403d9251ac1dd8a1ce1e1ce6a17589774eaea32859a2652"
+    },
+    {
+      "file": "notebooks/01_ivv_holdings.ipynb",
+      "module": "quiet_index_500.foundation.same_security",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "7d1f8b88758bd9749bcc4c26ad507dea38400d24efd2198fa67d64b3807e0a96"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "5ef05dffffdf51c50a36ea8ee5df0b87a0522dad19577479191f6c6785ac2767"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/build.py",
+      "sha256": "4590479db30e7b608aee577427254453495612269245d8623e50d5c37d3a80c7"
+    },
+    {
+      "file": "notebooks/02_prices.ipynb",
+      "module": "quiet_index_500.foundation.build",
+      "fingerprint": "notebook-calculation-cells-v1",
+      "sha256": "fab0838dcca6e6388c7155e578fe4cade2877bcd04c997e4ea44a4e425cf43dd"
+    }
+  ],
+  "sha256": "c74ae696e37f7aa0c176b800b9108519182147efbef331e9ea7eede1afcef961",
+  "bytes": 47851,
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "snapshot_weight",
+    "price_source",
+    "same_security_history_start",
+    "history_end",
+    "first_usable_price_date",
+    "last_usable_price_date",
+    "sessions_with_return",
+    "days_before_same_security_start",
+    "zero_volume_days_masked",
+    "vendor_gap_days",
+    "large_daily_moves",
+    "market_cap_days_rejected",
+    "market_cap_days_missing_while_priced",
+    "under_one_year_history",
+    "ends_before_last_session",
+    "size_dependent_exclusion_days",
+    "any_flag",
+    "market_cap_nonpositive_days",
+    "quarantined_return_days"
+  ],
+  "note": "Per-ticker data flags. under_one_year_history means fewer than 252 returns; large_daily_moves counts daily simple returns beyond +-50%, flagged for review, not removed. size_dependent_exclusion_days counts priced days with no usable market cap. market_cap_nonpositive_days counts days with a zero or negative market cap (missing for size measurement, return kept); quarantined_return_days counts returns made missing by the extreme-event ledger."
+}

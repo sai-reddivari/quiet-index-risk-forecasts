@@ -1,0 +1,37 @@
+[
+  {
+    "file": "company_inference.csv",
+    "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+    "source_path": "extensions/company_risk/results/company_inference.csv",
+    "sha256": "549c718c0d7e4bc75464d57abdc09ccc0d7c03cc6d463f4c8888e648b6bba7e7",
+    "transformation": "none; exact saved table"
+  },
+  {
+    "file": "portfolio_contrasts.csv",
+    "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+    "source_path": "extensions/company_risk/results/portfolio/contrast_summary.csv",
+    "sha256": "5858dd65bed3ce314e74cd819889febcb10bb2ddddedae59190b0563afe9d395",
+    "transformation": "none; exact saved table"
+  },
+  {
+    "file": "aggregate_comparisons.csv",
+    "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+    "source_path": "results/licensed/smh_subgroups/synthesis/all_summary.csv",
+    "sha256": "5f7a2ec362067ada4e17fde0430def033dd793bbf383d49e9608aacf2555e51d",
+    "transformation": "none; exact saved table"
+  },
+  {
+    "file": "group_comparisons.csv",
+    "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+    "source_path": "results/licensed/smh_subgroups/synthesis/group_summary.csv",
+    "sha256": "040c04287ccd7dd1cb4cac8b316716934fa1b1e5e7ea2718927751ccdcc7842f",
+    "transformation": "none; exact saved table"
+  },
+  {
+    "file": "group_uncertainty.csv",
+    "source_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+    "source_path": "results/licensed/smh_subgroups/synthesis/group_uncertainty.csv",
+    "sha256": "75262367933a7dfd93fc0126c66ebb9492dec0943c2c52f17178be59d8565d30",
+    "transformation": "none; exact saved table"
+  }
+]

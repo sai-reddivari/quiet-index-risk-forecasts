@@ -1,0 +1,95 @@
+{
+  "file": "data/processed/ticker_data_flags_through_2026-10-12.csv",
+  "built_by": "notebooks/02_prices.ipynb",
+  "built_at_utc": "2026-10-15T19:54:35+00:00",
+  "inputs": [
+    {
+      "file": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    },
+    {
+      "file": "data/processed/universe_weights_2026-09-30.csv",
+      "sha256": "89c624ebfb8d9a29c3e7ec9f4165847301b6742ffc9d4d573070b4925a55711c"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "file": "data/raw/market_cap_fmp_through_2026-10-12.csv",
+      "sha256": "f73492a70b0633be40c258cb4fc8c42ddcad82f1e56ed2122999cdf34cc1cfca"
+    },
+    {
+      "file": "data/processed/same_security_rules_2026-09-30.csv",
+      "sha256": "0f5f79d9f9c8c59c3f1480c0ec9da5e7031bee5d123e134beb3ed0621901968e"
+    },
+    {
+      "file": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+      "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/settings.py",
+      "sha256": "b39dbe9d43cdb44a017892f0fcc1bc6e9009e7c6a595281c74d1d8e317f6ec8f"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "ff28147820dea77fd4229f7dfad0bb6b6dba8d964f2e2753428c295c10a5e8d8"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "79ad3f0ae6cadcc1d1ce000a15ed24fd4c224ace042bc9750ffdb88f7f7a031d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "f04824fe1f82e7c50201206f942d1b1abea98f314bcfee657b240678d970747b"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "02aefaa647c4a63da273972c2e4eb05d0ddb89566732c0456d647165621eaaef"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/build.py",
+      "sha256": "7c64853672986a812a291c9986ac2bb864d99cddb41a2f9bfb56aec08516df3a"
+    }
+  ],
+  "sha256": "c74ae696e37f7aa0c176b800b9108519182147efbef331e9ea7eede1afcef961",
+  "bytes": 47851,
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "snapshot_weight",
+    "price_source",
+    "same_security_history_start",
+    "history_end",
+    "first_usable_price_date",
+    "last_usable_price_date",
+    "sessions_with_return",
+    "days_before_same_security_start",
+    "zero_volume_days_masked",
+    "vendor_gap_days",
+    "large_daily_moves",
+    "market_cap_days_rejected",
+    "market_cap_days_missing_while_priced",
+    "under_one_year_history",
+    "ends_before_last_session",
+    "size_dependent_exclusion_days",
+    "any_flag",
+    "market_cap_nonpositive_days",
+    "quarantined_return_days"
+  ],
+  "note": "Per-ticker data flags. under_one_year_history means fewer than 252 returns; large_daily_moves counts daily simple returns beyond +-50%, flagged for review, not removed. size_dependent_exclusion_days counts priced days with no usable market cap. market_cap_nonpositive_days counts days with a zero or negative market cap (missing for size measurement, return kept); quarantined_return_days counts returns made missing by the extreme-event ledger."
+}

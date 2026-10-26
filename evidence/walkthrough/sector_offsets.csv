@@ -1,0 +1,23 @@
+model,sector,combined_intercept_and_sector_offset
+B,Communication Services,-1.4430026556528215
+B,Consumer Discretionary,-1.4699873287339047
+B,Consumer Staples,-1.4885859713079508
+B,Energy,-1.3977154884224114
+B,Financials,-1.5119666589298102
+B,Health Care,-1.4705200679564432
+B,Industrials,-1.5254328268276705
+B,Information Technology,-1.4983966081082167
+B,Materials,-1.4764040028923449
+B,Real Estate,-1.4644214818864023
+B,Utilities,-1.4818881105681276
+B+S,Communication Services,-1.4417198703533933
+B+S,Consumer Discretionary,-1.4639140079780235
+B+S,Consumer Staples,-1.4863753184641704
+B+S,Energy,-1.4003574968472607
+B+S,Financials,-1.5107603270565895
+B+S,Health Care,-1.4648309407021232
+B+S,Industrials,-1.5226293627614926
+B+S,Information Technology,-1.5163458625213648
+B+S,Materials,-1.4765167603388636
+B+S,Real Estate,-1.4583840919516466
+B+S,Utilities,-1.4770003411743988

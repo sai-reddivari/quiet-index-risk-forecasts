@@ -1,0 +1,11 @@
+{
+  "source": "Wikipedia, 'Global Industry Classification Standard', raw wikitext",
+  "source_url": "https://en.wikipedia.org/w/index.php?oldid=1373583957&action=raw",
+  "revision_id": 1373583957,
+  "revision_timestamp_utc": "2026-09-06T19:31:56Z",
+  "as_of_requested_utc": "2026-09-30T23:59:59Z",
+  "pulled_at_utc": "2026-10-14T01:59:19+00:00",
+  "file": "data/raw/wikipedia_gics_structure_as_of_2026-09-30.wikitext",
+  "sha256": "d7171fae4dc5de8da33b14f64a6db1ecb908fc2d5cc37da0fce6e5a112b22f1e",
+  "note": "Secondary source, CC BY-SA. Used for GICS sub-industry by company and the GICS structure; checked against the IVV sector."
+}

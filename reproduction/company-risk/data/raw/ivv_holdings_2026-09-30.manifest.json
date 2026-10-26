@@ -1,0 +1,37 @@
+{
+  "source": "iShares Core S&P 500 ETF (IVV) fund holdings file, BlackRock product-data API",
+  "source_url": "https://www.blackrock.com/varnish-api/blk-one01-product-data/product-data/api/v1/get-fund-document?appType=PRODUCT_PAGE&appSubType=ISHARES&targetSite=us-ishares&locale=en_US&portfolioId=239726&userType=individual&component=holdings&asOfDate=20260930",
+  "download_command": "curl --silent --fail --location --output data/raw/ivv_holdings_2026-09-30.csv \"https://www.blackrock.com/varnish-api/blk-one01-product-data/product-data/api/v1/get-fund-document?appType=PRODUCT_PAGE&appSubType=ISHARES&targetSite=us-ishares&locale=en_US&portfolioId=239726&userType=individual&component=holdings&asOfDate=20260930\"",
+  "holdings_as_of_date": "2026-09-30",
+  "pulled_at_utc": "2026-10-14T00:03:49+00:00",
+  "file": "ivv_holdings_2026-09-30.csv",
+  "sha256": "ab722f6637e678015a3052085c371eb4f29bd65f1c15c3b17b090d1edb099fe8",
+  "bytes": 83277,
+  "preamble_lines_before_header": 9,
+  "table_rows": 508,
+  "rows_by_asset_class": {
+    "Cash": 1,
+    "Cash Collateral and Margins": 1,
+    "Equity": 504,
+    "Futures": 1,
+    "Money Market": 1
+  },
+  "columns": [
+    "Ticker",
+    "Name",
+    "Sector",
+    "Asset Class",
+    "Market Value",
+    "Weight (%)",
+    "Notional Value",
+    "Quantity",
+    "Price",
+    "Location",
+    "Exchange",
+    "Currency",
+    "FX Rate",
+    "Market Currency",
+    "Accrual Date"
+  ],
+  "note": "ETF holdings proxy for the S&P 500, not the official index constituent list. Weights are the fund's, in percent, two decimals, as printed. No CUSIP, SEDOL or ISIN columns are present in this file."
+}

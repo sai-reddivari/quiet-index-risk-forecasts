@@ -1,0 +1,11 @@
+{
+  "source": "Wikipedia, 'List of S&P 500 companies', raw wikitext",
+  "source_url": "https://en.wikipedia.org/w/index.php?oldid=1376729338&action=raw",
+  "revision_id": 1376729338,
+  "revision_timestamp_utc": "2026-09-25T22:49:33Z",
+  "as_of_requested_utc": "2026-09-30T23:59:59Z",
+  "pulled_at_utc": "2026-10-14T01:59:19+00:00",
+  "file": "data/raw/wikipedia_sp500_list_as_of_2026-09-30.wikitext",
+  "sha256": "0f26e2860afab41cef5f4f7ef186fc9e07d402efe0bc5f0a8e206fbcc798b6f0",
+  "note": "Secondary source, CC BY-SA. Used for GICS sub-industry by company and the GICS structure; checked against the IVV sector."
+}

@@ -1,0 +1,8 @@
+ticker,history_start,history_end,price_source,market_cap_valid_from,evidence
+WBD,,2026-09-30,fmp:WBD,2022-04-11,"One SEC registrant since 2008 (CIK 1437107: Discovery Communications, Discovery Inc., Warner Bros. Discovery); DISCA renamed WBD on 11 Apr 2022 with no price break. Yahoo holds a single bar (5 Oct 2026), which FMP's close matches; FMP adjusted returns match Yahoo's to 0.4bp a day on 25 test names. Kept through the snapshot date as Sai instructed. FMP market cap before the rename uses the post-merger share count (180-335% above SEC filings) and is rejected."
+PSKY,2025-08-07,,yahoo:SKYD,,SEC CIK 2041610 became Paramount Skydance Corp on 7 Aug 2025 and Skydance Corp on 6 Oct 2026; FMP records PSKY renamed SKYD on 6 Oct 2026. Yahoo and FMP agree exactly from 7 Aug 2025. Earlier SKYD prices are Paramount Global's and are excluded.
+SW,2024-07-08,,yahoo,,"New registrant (CIK 2005951, created Feb 2024); NYSE registration (8-A12B) filed 5 Jul 2024; last zero-volume day 5 Jul 2024. Earlier Yahoo prices are not this security."
+AMCR,2019-06-11,,yahoo,,New registrant Amcor plc (CIK 1748790); NYSE registration filed 7 Jun 2019; last zero-volume day 10 Jun 2019. Earlier Yahoo prices are not this security.
+FERG,2021-03-08,,yahoo,,"Ferguson plc NYSE trading from 8 Mar 2021, exchanged 1:1 into Ferguson Enterprises (CIK 2011641) on 1 Aug 2024 under an SEC successor filing (8-K12B), same ticker, no price break. Sai chose to keep the plc NYSE years; earlier prices are excluded."
+FOX,2019-03-19,,yahoo,,Fox Corp (CIK 1754301) regular-way trading from 19 Mar 2019; 12-18 Mar was when-issued. The symbol belonged to 21st Century Fox before March 2019. Sai chose regular-way.
+FOXA,2019-03-19,,yahoo,,As FOX.

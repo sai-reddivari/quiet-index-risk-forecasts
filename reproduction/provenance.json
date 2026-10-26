@@ -1,0 +1,29 @@
+{
+  "purpose": "Reader-facing names map to preserved scientific source snapshots. Internal filenames, run IDs and scientific file hashes are unchanged.",
+  "studies": [
+    {
+      "directory": "factor-risk",
+      "source_study": "original",
+      "source_commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf"
+    },
+    {
+      "directory": "calibration-covariance",
+      "source_study": "intermediate",
+      "source_commit": "eab47102acb38d483271752934981277f5c90bec"
+    },
+    {
+      "directory": "company-risk",
+      "source_study": "revised",
+      "source_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0"
+    }
+  ],
+  "reading_notebook_names": {
+    "original-08-forward-risk.ipynb": "company-risk-factor-benchmark.ipynb",
+    "original-09-portfolio-covariance.ipynb": "portfolio-covariance.ipynb",
+    "intermediate-06-calibration-activity.ipynb": "forecast-calibration-and-trading-activity.ipynb",
+    "intermediate-08-rates-covariance.ipynb": "interest-rates-and-covariance.ipynb",
+    "revised-03-liquidity-recency.ipynb": "recent-risk-and-liquidity.ipynb",
+    "revised-04-semiconductor.ipynb": "semiconductor-exposure.ipynb",
+    "revised-06-portfolio-treasury.ipynb": "portfolio-risk-and-treasury-controls.ipynb"
+  }
+}

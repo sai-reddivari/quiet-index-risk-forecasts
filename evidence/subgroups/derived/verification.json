@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "method": "saved paired forecasts only; no fitting",
+  "runs": [
+    "original_504_semiconductor",
+    "original_504_semiconductor_industry",
+    "revised_semiconductor_main",
+    "revised_semiconductor_industry_group"
+  ],
+  "input_sha256": {
+    "paired_forecasts.csv.gz": "78add3cbad06aac762642b68fa99bdf374bc35e0a4cd189e37487ec9965c0776",
+    "universe.csv": "c25d8aa35657deff3cfd795be3d8b204a9435009ba6593023fe274cc97408c67"
+  },
+  "versions": {
+    "python": "3.14.8",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "paired_rows": 50044,
+  "universe_companies": 500,
+  "coverage_rows": 52000,
+  "cross_run_max_target_difference": {
+    "original_504_semiconductor_industry": 0.0,
+    "revised_semiconductor_main": 8.965717057662914e-12,
+    "revised_semiconductor_industry_group": 8.965717057662914e-12
+  },
+  "group_contributions_reconcile": true,
+  "company_contributions_reconcile": true,
+  "reference_checks": [
+    {
+      "reference": "aggregate_comparisons.csv",
+      "sha256": "5f7a2ec362067ada4e17fde0430def033dd793bbf383d49e9608aacf2555e51d",
+      "rows": 16,
+      "columns": [
+        "quarters",
+        "expected_quarters",
+        "observations",
+        "n_min",
+        "n_max",
+        "mse_b",
+        "mse_e",
+        "mean_d",
+        "mean_quarterly_gain_pct",
+        "ratio_mean_loss_gain_pct",
+        "min_quarter_mse_b",
+        "favorable_quarters",
+        "worst_quarter_gain_pct",
+        "best_quarter_gain_pct",
+        "loo_gain_pct_min",
+        "loo_gain_pct_max",
+        "calibration_pp",
+        "centered_pp",
+        "headline_contribution_pp",
+        "population_contribution_d"
+      ],
+      "max_absolute_errors": {
+        "quarters": 0.0,
+        "expected_quarters": 0.0,
+        "observations": 0.0,
+        "n_min": 0.0,
+        "n_max": 0.0,
+        "mse_b": 4.996003610813204e-16,
+        "mse_e": 4.718447854656915e-16,
+        "mean_d": 1.0134579807308253e-16,
+        "mean_quarterly_gain_pct": 9.43689570931383e-15,
+        "ratio_mean_loss_gain_pct": 3.8413716652030416e-14,
+        "min_quarter_mse_b": 8.326672684688674e-17,
+        "favorable_quarters": 0.0,
+        "worst_quarter_gain_pct": 3.710920459809586e-14,
+        "best_quarter_gain_pct": 3.397282455352979e-14,
+        "loo_gain_pct_min": 1.099120794378905e-14,
+        "loo_gain_pct_max": 1.0685896612017132e-14,
+        "calibration_pp": 6.869504964868156e-15,
+        "centered_pp": 1.1147333056626962e-14,
+        "headline_contribution_pp": 4.8433479449272454e-15,
+        "population_contribution_d": 1.4029576111962427e-16
+      }
+    },
+    {
+      "reference": "group_comparisons.csv",
+      "sha256": "040c04287ccd7dd1cb4cac8b316716934fa1b1e5e7ea2718927751ccdcc7842f",
+      "rows": 576,
+      "columns": [
+        "quarters",
+        "expected_quarters",
+        "observations",
+        "n_min",
+        "n_max",
+        "mse_b",
+        "mse_e",
+        "mean_d",
+        "mean_quarterly_gain_pct",
+        "ratio_mean_loss_gain_pct",
+        "min_quarter_mse_b",
+        "favorable_quarters",
+        "worst_quarter_gain_pct",
+        "best_quarter_gain_pct",
+        "loo_gain_pct_min",
+        "loo_gain_pct_max",
+        "calibration_pp",
+        "centered_pp",
+        "headline_contribution_pp",
+        "population_contribution_d"
+      ],
+      "max_absolute_errors": {
+        "quarters": 0.0,
+        "expected_quarters": 0.0,
+        "observations": 0.0,
+        "n_min": 0.0,
+        "n_max": 0.0,
+        "mse_b": 5.412337245047638e-16,
+        "mse_e": 6.106226635438361e-16,
+        "mean_d": 3.131175874138137e-16,
+        "mean_quarterly_gain_pct": 7.749356711883593e-13,
+        "ratio_mean_loss_gain_pct": 2.2182256032010628e-13,
+        "min_quarter_mse_b": 1.448494102440634e-16,
+        "favorable_quarters": 0.0,
+        "worst_quarter_gain_pct": 4.636291350834654e-13,
+        "best_quarter_gain_pct": 4.014566457044566e-12,
+        "loo_gain_pct_min": 6.655787032627813e-13,
+        "loo_gain_pct_max": 9.299228054260311e-13,
+        "calibration_pp": 2.97983859809392e-13,
+        "centered_pp": 9.016121182980896e-13,
+        "headline_contribution_pp": 2.42861286636753e-15,
+        "population_contribution_d": 2.194425197110661e-16
+      }
+    },
+    {
+      "reference": "group_uncertainty.csv",
+      "sha256": "75262367933a7dfd93fc0126c66ebb9492dec0943c2c52f17178be59d8565d30",
+      "rows": 144,
+      "columns": [
+        "signflip_two_sided_p",
+        "paired_twoquarter_signflip_p",
+        "circular4_low",
+        "circular4_high",
+        "circular4_draws",
+        "holm_p",
+        "family_size"
+      ],
+      "max_absolute_errors": {
+        "signflip_two_sided_p": 0.0,
+        "paired_twoquarter_signflip_p": 0.0,
+        "circular4_low": 2.4513724383723456e-13,
+        "circular4_high": 1.34736666268509e-12,
+        "circular4_draws": 0.0,
+        "holm_p": 0.0,
+        "family_size": 0.0
+      }
+    }
+  ],
+  "outputs": {
+    "all_quarters.csv": {
+      "rows": 104,
+      "sha256": "f628d601d51a1c2b021ab401b4b3395e52b83289255c55a63ceac5376ca52633"
+    },
+    "all_summary.csv": {
+      "rows": 16,
+      "sha256": "c88168ee1c2faf1a9363bf0d485876b2a487c1be9b31adca3f0173fde6a0d394"
+    },
+    "group_quarters.csv": {
+      "rows": 3744,
+      "sha256": "a341ab617467d535dc8ab89f3c5d63b94ec6e5552b38bb59cac73312591b1d59"
+    },
+    "group_summary.csv": {
+      "rows": 576,
+      "sha256": "d4cc5bc2b5877ece247e42add00f3d237ef33534cd6edb2df701898ce9e4b349"
+    },
+    "group_uncertainty.csv": {
+      "rows": 144,
+      "sha256": "aaf65d8e3c5ce43c73be5d71c3daac1cdb569c8f63eb1716673f4f7326517de6"
+    },
+    "company_summary.csv.gz": {
+      "rows": 8000,
+      "sha256": "a2dbf43fdd0648a20107a6384f2cec63f67bd56ba71b66eca5990fb1f48dea12"
+    },
+    "coverage_quarters.csv": {
+      "rows": 104,
+      "sha256": "47df1e2a674e1dceb8d6db4c66c6423550078d5d8f4cd7f579035e6aeba99896"
+    },
+    "coverage.csv.gz": {
+      "rows": 52000,
+      "sha256": "508e015462f9e501503cdb47aa4afa6eda537e01d2704299fe89789d52784074"
+    },
+    "late_company_quarters.csv.gz": {
+      "rows": 12000,
+      "sha256": "b99dd5072956541d411644662a9c1d63dabfb9564f1715a64ff2234089649669"
+    }
+  }
+}

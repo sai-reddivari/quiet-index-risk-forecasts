@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "status": "passed",
+  "scope": "Focused verification of publication narrative, saved-coefficient walkthrough and saved-forecast subgroup diagnostics; not a new experiment or full pipeline rerun.",
+  "canonical_sources": {
+    "original": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+    "intermediate": "eab47102acb38d483271752934981277f5c90bec",
+    "revised": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+    "subgroup_supplement": "a7cd4db5c39d18b30a2efd707a265d3f23b54615"
+  },
+  "preserved_pre_review_commit": "ace2abe53aea00a6268bf7a97410c736ebea194f",
+  "scientific_files_hash_verified": 269,
+  "notebooks_byte_unchanged": 7,
+  "notebook_code_cells_unchanged": 64,
+  "walkthrough": {
+    "predictions_checked": 978,
+    "maximum_absolute_prediction_difference": 2.0539125955565396e-14,
+    "saved_trace_outputs_byte_identical": 3,
+    "checks": [
+      "input hashes",
+      "one-to-one joins",
+      "matched eligibility",
+      "chronological training",
+      "training preprocessing",
+      "saved predictions",
+      "training smearing",
+      "quarterly MSE"
+    ]
+  },
+  "subgroups": {
+    "paired_rows": 50044,
+    "coverage_rows": 52000,
+    "regenerated_data_outputs_byte_identical": 9,
+    "group_contributions_reconcile": true,
+    "company_contributions_reconcile": true,
+    "reference_checks": [
+      {
+        "reference": "aggregate_comparisons.csv",
+        "rows": 16,
+        "max_absolute_error": 3.8413716652030416e-14
+      },
+      {
+        "reference": "group_comparisons.csv",
+        "rows": 576,
+        "max_absolute_error": 4.014566457044566e-12
+      },
+      {
+        "reference": "group_uncertainty.csv",
+        "rows": 144,
+        "max_absolute_error": 1.34736666268509e-12
+      }
+    ]
+  },
+  "reader_local_links_checked": 106,
+  "independent_review": "No actionable substantive findings; canonical re-export, exact extracts, numerical reconstructions and narrative checked.",
+  "regression_refits": 0,
+  "new_market_data": false,
+  "extension_implemented": false,
+  "fingerprints": {
+    "analysis/forecast_walkthrough.py": "6049907abbde9fefd143f389f2bd49f59e359b1d85502ae76987a849fcb9ee95",
+    "analysis/prepare_subgroup_inputs.py": "341cfd49327c5646d1d802802ca4a1343c97fe633fb4446eae835b6fb115312c",
+    "analysis/subgroup_diagnostics.py": "b788e54701765c281d002be59dddb850479237a668e31c673e45b4a14464e1ae",
+    "evidence/subgroups/derived/verification.json": "0e48e2b6ab7da3ea01bf39f67e72f7966e37e5da7e9a48406e01afb29009f121",
+    "evidence/subgroups/input_provenance.json": "7869f1f09599118f481efec34b61d6eb7e91aa1b309740f9f6b3620dc9b34f9d",
+    "evidence/walkthrough/feature_contributions.csv": "6c63be922d7abcbcd3b7f388d42349ff7b4cda750f0863e786371daeda15bba2",
+    "evidence/walkthrough/forecast_trace.json": "9b9b5a718f2841b4cabef619cd14f98ef274edf114b00b615741d677537aa43c",
+    "evidence/walkthrough/predictions.csv": "e196ba0f4637e4f5f1aa6d17708e815a8a47c8efc095a656aadc74a6c494c0ee",
+    "evidence/walkthrough/preprocessing.csv": "9f1c655a9ae0facd28defde530db258033bd82156fa5a3112cd9b91aa5345fa8",
+    "evidence/walkthrough/provenance.json": "28dd5492b498571361178a5e4d864e1004c62e4b9a73062063fcdc2785dad505",
+    "evidence/walkthrough/quarter_scores.csv": "4e223a7eefead9a96171b15a0aa97685efdc0a90b416eefa31eaf551ba1cecd0",
+    "evidence/walkthrough/sector_offsets.csv": "cbb6df4247fde25a8166f62ae0bf77ea92d7563d471b933f0310609dbed9ec53"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "file": "data/processed/ivv_equity_holdings_2026-09-30.csv",
+  "built_by": "notebooks/01_ivv_holdings.ipynb",
+  "built_at_utc": "2026-10-14T04:47:39+00:00",
+  "inputs": [
+    {
+      "file": "data/raw/ivv_holdings_2026-09-30.csv",
+      "sha256": "ab722f6637e678015a3052085c371eb4f29bd65f1c15c3b17b090d1edb099fe8"
+    },
+    {
+      "file": "data/raw/sec_company_tickers_2026-10-09.json",
+      "sha256": "a9595d33a34615553ee706c95458fff0bb9fec9642a9d61710f3e5dbd45ca23e"
+    },
+    {
+      "file": "data/raw/wikipedia_sp500_list_as_of_2026-09-30.wikitext",
+      "sha256": "0f26e2860afab41cef5f4f7ef186fc9e07d402efe0bc5f0a8e206fbcc798b6f0"
+    },
+    {
+      "file": "data/raw/wikipedia_gics_structure_as_of_2026-09-30.wikitext",
+      "sha256": "d7171fae4dc5de8da33b14f64a6db1ecb908fc2d5cc37da0fce6e5a112b22f1e"
+    }
+  ],
+  "sha256": "c64b3e43616769ebb9cdc497963f9dee6c53f1f8691d084becc27d0a1056c164",
+  "bytes": 110530,
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "Name",
+    "Sector",
+    "Market Value",
+    "Weight (%)",
+    "Price",
+    "cik",
+    "issuer_name",
+    "weight",
+    "gics_sector_code",
+    "gics_sector",
+    "gics_industry_group_code",
+    "gics_industry_group",
+    "gics_industry_code",
+    "gics_industry",
+    "gics_sub_industry_code",
+    "gics_sub_industry"
+  ],
+  "note": "IVV equity lines on 30 Sep 2026, HOLX dropped. weight = Market Value / total equity Market Value, decimal, sums to 1. Market Value is the fund's dollar holding, not the company's market cap. GICS industry group, industry and sub-industry come from Wikipedia as of 30 Sep 2026; their sector matches the IVV sector for every name."
+}

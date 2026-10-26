@@ -1,0 +1,63 @@
+{
+  "study": "revised",
+  "run_id": "semiconductor_main",
+  "issuer_id": 19617,
+  "ticker": "JPM",
+  "selection": "Same issuer as earlier worked example; first late quarter. Not selected for forecast benefit.",
+  "formation_date": "2024-12-31",
+  "outcome_quarter": "2025Q1",
+  "outcome_start": "2025-01-02",
+  "outcome_end": "2025-03-31",
+  "outcome_days": 60,
+  "estimation_start": "2022-12-29",
+  "estimation_end": "2024-12-31",
+  "conventional_intercept": 0.0007692475735536,
+  "conventional_loadings": {
+    "mkt_rf": 0.9333199734118336,
+    "smb": -0.2330047687061819,
+    "hml": 1.096623508437749,
+    "rmw": -0.3155837505600313,
+    "cma": -0.1247939022397458,
+    "mom": 0.1201615800295914
+  },
+  "training_rows": 13261,
+  "training_quarters": 28,
+  "training_last_completed_outcome": "2024-12-31",
+  "evaluation_companies": 489,
+  "signed_smh_loading": -0.0787356976239005,
+  "standardized_smh_loading": -0.29095851392199534,
+  "smh_forecast_coefficient": 0.0180452673061707,
+  "smh_term_only": -0.0052504241587285954,
+  "forecast_difference": 0.003417564759778946,
+  "paired_squared_error_improvement": -0.00022178455204531445,
+  "quarter_mse_improvement_pct": -0.08144556259285839,
+  "models": {
+    "B": {
+      "actual_log_vol": -1.9162430933228352,
+      "predicted_log_vol": -1.8855041288954835,
+      "squared_error": 0.0009448839340659926,
+      "exp_predicted_log_vol": 0.1517525373035262,
+      "actual_annualized_vol": 0.1471587867330101,
+      "numeric_contribution_sum": -0.37353746996567333,
+      "combined_intercept_and_sector_offset": -1.5119666589298102,
+      "training_smearing_factor": 1.261491911057355,
+      "quarter_mse": 0.06897161490183076,
+      "max_saved_prediction_difference": 2.0539125955565396e-14
+    },
+    "B+S": {
+      "actual_log_vol": -1.9162430933228352,
+      "predicted_log_vol": -1.8820865641357045,
+      "squared_error": 0.001166668486111307,
+      "exp_predicted_log_vol": 0.15227204865341587,
+      "actual_annualized_vol": 0.1471587867330101,
+      "numeric_contribution_sum": -0.37132623707911516,
+      "combined_intercept_and_sector_offset": -1.5107603270565895,
+      "training_smearing_factor": 1.2606357706318074,
+      "quarter_mse": 0.06902778922161694,
+      "max_saved_prediction_difference": 1.5765166949677223e-14
+    }
+  },
+  "regression_refits": 0,
+  "new_market_data": false,
+  "boundary": "Saved prepared measurements and numeric coefficients; sector offsets reconstructed from training-only OLS normal equations. No raw-price target rebuild."
+}

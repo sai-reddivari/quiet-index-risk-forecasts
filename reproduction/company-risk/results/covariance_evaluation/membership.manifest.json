@@ -1,0 +1,146 @@
+{
+  "file": "results/covariance_evaluation/membership.csv",
+  "built_by": "quiet_index_500 research pipeline",
+  "built_at_utc": "2026-10-15T19:57:14+00:00",
+  "inputs": [
+    {
+      "file": "data/processed/universe_tickers_2026-09-30.csv",
+      "sha256": "3c1e64b524f7ea6c010110a15f1baaa55d1622693bc5ee4c2dc977c5f3816f24"
+    },
+    {
+      "file": "data/processed/universe_weights_2026-09-30.csv",
+      "sha256": "89c624ebfb8d9a29c3e7ec9f4165847301b6742ffc9d4d573070b4925a55711c"
+    },
+    {
+      "file": "data/processed/ivv_equity_holdings_2026-09-30.csv",
+      "sha256": "c64b3e43616769ebb9cdc497963f9dee6c53f1f8691d084becc27d0a1056c164"
+    },
+    {
+      "file": "data/raw/prices_adjusted_close_through_2026-10-12.csv",
+      "sha256": "b4c7bbf846bd8ef55e092cb3cb27ae8358de2dbab828b3f8130a155cae42cad2"
+    },
+    {
+      "file": "data/raw/prices_close_split_adjusted_through_2026-10-12.csv",
+      "sha256": "a2461ad76aed266a4f6eb1a5e63e33270c7468adbe1135a35a78ecce75a58acf"
+    },
+    {
+      "file": "data/raw/prices_volume_through_2026-10-12.csv",
+      "sha256": "99e076de64dd0a119a46efb44b0f75c5c8fe3cf5cd41f7f5ee1ee03e416a0420"
+    },
+    {
+      "file": "data/raw/prices_supplement_through_2026-10-12.csv",
+      "sha256": "ffc8c7dd999269a73f1266ec40ec80a2b57eb52a4080c072e684a8da2bd7873e"
+    },
+    {
+      "file": "data/raw/prices_spy_through_2026-10-12.csv",
+      "sha256": "fb6005f6431884c37bbeb28280b7fb0e3d964f9102d6e18d89168ffa0492ed44"
+    },
+    {
+      "file": "data/raw/prices_smh_through_2026-10-12.csv",
+      "sha256": "d12bfb600f6037b14a8ad0b8f05f3f15c9d1e67b756a241269e2912f3f7641b4"
+    },
+    {
+      "file": "data/processed/ff5_mom_factors_daily_2015-01-02_2026-08-31.csv",
+      "sha256": "63326418d32ce11eb07de8087960755bc49d80538ce39255971615a17fd11f78"
+    },
+    {
+      "file": "data/processed/same_security_rules_2026-09-30.csv",
+      "sha256": "0f5f79d9f9c8c59c3f1480c0ec9da5e7031bee5d123e134beb3ed0621901968e"
+    },
+    {
+      "file": "data/corrections/extreme_event_ledger_2026-09-30.csv",
+      "sha256": "4bc4d628466712a0fdf149f26f71d71527a4dee26b49b97283363ff0fe2201a9"
+    },
+    {
+      "file": "docs/TEST_FREEZE.md",
+      "sha256": "b7f7fec002aeddc9f425066fd1fcc8d85d45afdaa2b5fc3790ca24eaefc8a7f0"
+    },
+    {
+      "file": "results/factor_exposures/exposures_504.csv",
+      "sha256": "5bf6614a2dbd775a65ad1cb365d14cf51bafecb953c3040640cfe46e6168e1b9"
+    },
+    {
+      "file": "results/factor_exposures/exposures_252.csv",
+      "sha256": "e6361a7430a2d6d06603cba9acd1639e08d0e8ad55a796b3a0029c1ca2a04442"
+    }
+  ],
+  "source_code": [
+    {
+      "file": "src/quiet_index_500/settings.py",
+      "sha256": "b39dbe9d43cdb44a017892f0fcc1bc6e9009e7c6a595281c74d1d8e317f6ec8f"
+    },
+    {
+      "file": "src/quiet_index_500/research_io.py",
+      "sha256": "4623abc08bffcd05bcd9ef5fdb6c08bd6f121bb4f44601e750432642a6124aa6"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/__init__.py",
+      "sha256": "55ca05640568d582aa1da87f1f54836de79cee944c97131dd4589c3f506ac894"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/build.py",
+      "sha256": "7c64853672986a812a291c9986ac2bb864d99cddb41a2f9bfb56aec08516df3a"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/calendar.py",
+      "sha256": "3a71aacf99b4e2b8d223568dde8a108f94fc628ab4578a10f53ce635bfd40a71"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/corrections.py",
+      "sha256": "79ad3f0ae6cadcc1d1ce000a15ed24fd4c224ace042bc9750ffdb88f7f7a031d"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/eligibility.py",
+      "sha256": "712eea26dd9b7f979b8b28ae64f9f3fa442dce886173f47a3cc1326ed0f314ea"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/inventory.py",
+      "sha256": "66fe42ebc27787958902e0005fd50a8ed207907497185ae58391418829e9ea82"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/loader.py",
+      "sha256": "ff28147820dea77fd4229f7dfad0bb6b6dba8d964f2e2753428c295c10a5e8d8"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/manifests.py",
+      "sha256": "02aefaa647c4a63da273972c2e4eb05d0ddb89566732c0456d647165621eaaef"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/same_security.py",
+      "sha256": "f04824fe1f82e7c50201206f942d1b1abea98f314bcfee657b240678d970747b"
+    },
+    {
+      "file": "src/quiet_index_500/foundation/validation.py",
+      "sha256": "ff51334319b67ef299f90ea41bf69165db01fbfeb2fa5e045ca2143ee1887c25"
+    },
+    {
+      "file": "src/quiet_index_500/covariance_evaluation.py",
+      "sha256": "974aab041f625b81eb93e783dcb031c5ce385543e62448d6a6fb9401fed207ae"
+    },
+    {
+      "file": "src/quiet_index_500/factor_exposures.py",
+      "sha256": "89256103bcf3a17ab97dd9d44ae2e29d60138f8f70b2408a1f9cce7286be2f8c"
+    }
+  ],
+  "sha256": "a1e6d7f0af20f2da16b2f69645ccff261e7f7d9fe250f75e0a2162a09aa74a5c",
+  "bytes": 10656014,
+  "rows": 104418,
+  "columns": [
+    "portfolio",
+    "ticker",
+    "cik",
+    "weight",
+    "snapshot_weight",
+    "gics_industry_group_code",
+    "formation_smh_loading",
+    "smh_split_median",
+    "licensed_size_dependency",
+    "formation_date",
+    "window_sessions"
+  ],
+  "note": "Formation-fixed holdings and target weights; both models refit on the same portfolio-specific complete training dates. Factor and residual covariances use n-1. Future common dates exclude any missing holding or factor; no holding reweighting. QLIKE is realized/predicted-log(realized/predicted)-1. Quarter uncertainty conditions on memberships and estimated loadings.",
+  "licensed_market_cap_dependency": false,
+  "price_vintage": "2026-10-12",
+  "research_price_cutoff": "2026-09-30",
+  "factor_vintage": "202608"
+}

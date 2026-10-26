@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quiet-index-500"
+version = "0.1.0"
+description = "Concentration, factor exposure and risk decomposition of the S&P 500"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "yfinance>=1.7",
+    "requests>=2.31",
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "statsmodels>=0.14",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["ipykernel", "nbconvert", "nbclient", "pytest", "mistune>=3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

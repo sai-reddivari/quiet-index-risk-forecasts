@@ -1,0 +1,75 @@
+# Scientific functions selected verbatim from common.py.
+# Imports, data loading, output writing and figure/provenance helpers are omitted.
+# This text is for inspection and is not a runnable module.
+
+def ols(x, y):
+    """Least squares with an intercept supplied by the caller; no normal equations."""
+    x, y = np.asarray(x, float), np.asarray(y, float)
+    if not np.isfinite(x).all() or not np.isfinite(y).all():
+        raise ValueError('OLS received missing or nonfinite observations')
+    coefficients, _, rank, _ = np.linalg.lstsq(x, y, rcond=None)
+    if rank < x.shape[1]:
+        raise ValueError('Rank-deficient daily regression')
+    return coefficients, y - x @ coefficients
+
+def design(frame):
+    values = np.asarray(frame, float)
+    return np.column_stack([np.ones(len(values)), values])
+
+def positive_log(value):
+    return float(np.log(value)) if np.isfinite(value) and value > 0 else np.nan
+
+def variance(values):
+    values = np.asarray(values, float)
+    values = values[np.isfinite(values)]
+    return float(np.var(values, ddof=1)) if len(values) > 1 else np.nan
+
+def qlike(actual, forecast):
+    actual, forecast = np.asarray(actual, float), np.asarray(forecast, float)
+    if np.any(actual <= 0) or np.any(forecast <= 0):
+        raise ValueError('QLIKE requires strictly positive variances')
+    log_ratio = np.log(actual) - np.log(forecast)
+    return np.expm1(log_ratio) - log_ratio
+
+def historical_block(formation):
+    return {'development': 'development', 'validation': 'historical_validation',
+            'confirmation': 'historical_late', 'incomplete': 'incomplete'}[calendar.outcome_block(formation)]
+
+def security_window_valid(prices, dates, ticker):
+    return not (prices.before_same_security_start.loc[dates, ticker].any() or prices.after_history_end.loc[dates, ticker].any())
+
+def block_interval(values, dates=None):
+    """Circular four-quarter moving blocks, conditional on saved quarterly effects."""
+    values = np.asarray(values, float)
+    if dates is not None:
+        periods = pd.PeriodIndex(pd.to_datetime(dates), freq='Q')
+        if not periods.is_unique:
+            raise ValueError('Quarterly effects must be unique')
+        values = pd.Series(values, index=periods).reindex(pd.period_range(periods.min(), periods.max(), freq='Q')).to_numpy()
+    count = int(np.isfinite(values).sum())
+    if not count:
+        return {'effect': np.nan, 'ci_low': np.nan, 'ci_high': np.nan, 'p_two_sided': np.nan, 'quarters': 0}
+    rng = np.random.default_rng(cfg.bootstrap_seed)
+    starts = rng.integers(0, len(values), size=(cfg.bootstrap_draws, int(np.ceil(len(values) / cfg.bootstrap_block))))
+    indices = ((starts[:, :, None] + np.arange(cfg.bootstrap_block)) % len(values)).reshape(cfg.bootstrap_draws, -1)[:, :len(values)]
+    sampled = values[indices]
+    accepted = np.isfinite(sampled).any(axis=1)
+    boot = np.nanmean(sampled[accepted], axis=1)
+    effect = np.nanmean(values)
+    p_value = (1 + np.sum(np.abs(boot - effect) >= abs(effect))) / (len(boot) + 1)
+    return {'effect': effect, 'ci_low': np.quantile(boot, .025), 'ci_high': np.quantile(boot, .975),
+            'p_two_sided': p_value, 'quarters': count, 'calendar_quarters': len(values),
+            'missing_quarters': len(values) - count}
+
+def summarize_effects(quarters, grouping=('comparison', 'variant', 'controls')):
+    rows = []
+    for keys, group in quarters.groupby(list(grouping), dropna=False, sort=True):
+        base = dict(zip(grouping, keys if isinstance(keys, tuple) else (keys,)))
+        for block, part in group.groupby('block', sort=True):
+            part = part.sort_values('formation_date')
+            row = {**base, 'block': block, **block_interval(part.improvement, part.formation_date)}
+            if 'baseline_loss' in part:
+                row.update(baseline_loss=part.baseline_loss.mean(), extension_loss=part.extension_loss.mean(),
+                           relative_improvement=1 - part.extension_loss.mean() / part.baseline_loss.mean())
+            rows.append(row)
+    return pd.DataFrame(rows)

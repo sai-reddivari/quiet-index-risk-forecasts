@@ -1,0 +1,131 @@
+{
+  "original_commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+  "revised_commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+  "supplement_commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+  "method": "Re-export canonical saved predictions; paired B/B+S, no model fitting, raw market data, or acquisition.",
+  "source_files": [
+    {
+      "study": "supplement",
+      "commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "path": "results/licensed/smh_subgroups/synthesis/all_summary.csv",
+      "source_sha256": "5f7a2ec362067ada4e17fde0430def033dd793bbf383d49e9608aacf2555e51d",
+      "canonical_git_blob_sha256": "5f7a2ec362067ada4e17fde0430def033dd793bbf383d49e9608aacf2555e51d",
+      "canonical_match": true
+    },
+    {
+      "study": "supplement",
+      "commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "path": "results/licensed/smh_subgroups/synthesis/group_summary.csv",
+      "source_sha256": "040c04287ccd7dd1cb4cac8b316716934fa1b1e5e7ea2718927751ccdcc7842f",
+      "canonical_git_blob_sha256": "040c04287ccd7dd1cb4cac8b316716934fa1b1e5e7ea2718927751ccdcc7842f",
+      "canonical_match": true
+    },
+    {
+      "study": "supplement",
+      "commit": "a7cd4db5c39d18b30a2efd707a265d3f23b54615",
+      "path": "results/licensed/smh_subgroups/synthesis/group_uncertainty.csv",
+      "source_sha256": "75262367933a7dfd93fc0126c66ebb9492dec0943c2c52f17178be59d8565d30",
+      "canonical_git_blob_sha256": "75262367933a7dfd93fc0126c66ebb9492dec0943c2c52f17178be59d8565d30",
+      "canonical_match": true
+    },
+    {
+      "study": "original",
+      "commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+      "path": "results/licensed/panel/company_panel_504.csv",
+      "source_sha256": "0a9d7d2ddfc8aa4cb95420954c7815265b2446b18e259550d799684a8cffe04f",
+      "canonical_git_blob_sha256": "0a9d7d2ddfc8aa4cb95420954c7815265b2446b18e259550d799684a8cffe04f",
+      "canonical_match": true
+    },
+    {
+      "study": "revised",
+      "commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "path": "results/licensed/panel/company_panel_504.csv",
+      "source_sha256": "0a9d7d2ddfc8aa4cb95420954c7815265b2446b18e259550d799684a8cffe04f",
+      "canonical_git_blob_sha256": "0a9d7d2ddfc8aa4cb95420954c7815265b2446b18e259550d799684a8cffe04f",
+      "canonical_match": true
+    },
+    {
+      "study": "original",
+      "commit": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+      "path": "results/licensed/forward_tests/predictions_504_residual_volatility.csv",
+      "source_sha256": "5cd6b3731e5f0dbcca9bbb7def0ecf366b8443a8bf1d7dbbee349617e7e7127f",
+      "canonical_git_blob_sha256": "5cd6b3731e5f0dbcca9bbb7def0ecf366b8443a8bf1d7dbbee349617e7e7127f",
+      "canonical_match": true
+    },
+    {
+      "study": "revised",
+      "commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "path": "extensions/company_risk/results/semiconductor_company_predictions.csv.gz",
+      "source_sha256": "f8cec377bdc4dfa1343ccf94ddbac560185aeb6ef94601ac20ffbe61a981df69",
+      "canonical_git_blob_sha256": "f8cec377bdc4dfa1343ccf94ddbac560185aeb6ef94601ac20ffbe61a981df69",
+      "canonical_match": true
+    },
+    {
+      "study": "revised",
+      "commit": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+      "path": "extensions/company_risk/data/processed/formation_measurements.csv",
+      "source_sha256": "8ea496328166eef033df4178136d282713f107f4f9d5da762c35f88f9c3cdb34",
+      "canonical_git_blob_sha256": "8ea496328166eef033df4178136d282713f107f4f9d5da762c35f88f9c3cdb34",
+      "canonical_match": true
+    }
+  ],
+  "public_reference_sha256": {
+    "aggregate_comparisons.csv": "5f7a2ec362067ada4e17fde0430def033dd793bbf383d49e9608aacf2555e51d",
+    "group_comparisons.csv": "040c04287ccd7dd1cb4cac8b316716934fa1b1e5e7ea2718927751ccdcc7842f",
+    "group_uncertainty.csv": "75262367933a7dfd93fc0126c66ebb9492dec0943c2c52f17178be59d8565d30"
+  },
+  "selection": {
+    "window_sessions": 504,
+    "original_comparisons": [
+      "semiconductor",
+      "semiconductor_industry"
+    ],
+    "original_outcome": "log_forward_residual_volatility",
+    "revised_runs": [
+      "semiconductor_main",
+      "semiconductor_industry_group"
+    ],
+    "revised_models": [
+      "B",
+      "B+S"
+    ],
+    "blocks": {
+      "development": 12,
+      "validation": 8,
+      "confirmation": 6
+    }
+  },
+  "joins": {
+    "original": "one-to-one formation_date / cik / ticker to same-window panel",
+    "revised_pair": "one-to-one run_id / sample_id / formation_date / outcome_quarter / issuer_id",
+    "revised_labels": "many-to-one cik / formation_date to same-window representative panel; cross-check formation sector/industry labels",
+    "identity_checks": [
+      "actual_log_vol",
+      "actual_variance",
+      "outcome_end",
+      "block_label",
+      "exposure_window",
+      "snapshot_weight",
+      "score_weight"
+    ]
+  },
+  "labels": "Retrospective supplied GICS sectors and industry groups, fixed issuer names/tickers; not point-in-time reclassification.",
+  "universe_companies": 500,
+  "paired_rows": 50044,
+  "rows_per_run": {
+    "original_504_semiconductor": 12511,
+    "original_504_semiconductor_industry": 12511,
+    "revised_semiconductor_industry_group": 12511,
+    "revised_semiconductor_main": 12511
+  },
+  "files": {
+    "paired_forecasts.csv.gz": {
+      "sha256": "78add3cbad06aac762642b68fa99bdf374bc35e0a4cd189e37487ec9965c0776"
+    },
+    "universe.csv": {
+      "sha256": "c25d8aa35657deff3cfd795be3d8b204a9435009ba6593023fe274cc97408c67"
+    }
+  },
+  "preparation_script_sha256": "341cfd49327c5646d1d802802ca4a1343c97fe633fb4446eae835b6fb115312c",
+  "scoring_script_sha256": "b788e54701765c281d002be59dddb850479237a668e31c673e45b4a14464e1ae"
+}

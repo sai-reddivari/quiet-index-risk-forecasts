@@ -1,0 +1,373 @@
+{
+  "status": "operationally_frozen_executed_preliminary_owner_review_pending",
+  "approved_plan": "docs/REVISED_RESEARCH_PLAN.md",
+  "company_target": "next-quarter log annualized conventional formation-fixed residual volatility",
+  "company_primary_metric": "MSE log volatility; equal-quarter aggregation",
+  "portfolio_primary_metric": "QLIKE variance",
+  "runs": [
+    {
+      "run_id": "calibration_main",
+      "family": "calibration",
+      "models": [
+        "C",
+        "C+L",
+        "C+R",
+        "B"
+      ],
+      "pairs": [
+        [
+          "C",
+          "C+L"
+        ],
+        [
+          "C",
+          "C+R"
+        ],
+        [
+          "C+R",
+          "B"
+        ],
+        [
+          "C+L",
+          "B"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union of all required inputs for set; same training and evaluation eligibility"
+    },
+    {
+      "run_id": "semiconductor_main",
+      "family": "semiconductor",
+      "models": [
+        "B",
+        "B+S",
+        "B+V",
+        "B+S+V"
+      ],
+      "pairs": [
+        [
+          "B",
+          "B+S"
+        ],
+        [
+          "B",
+          "B+V"
+        ],
+        [
+          "B+S",
+          "B+S+V"
+        ],
+        [
+          "B+V",
+          "B+S+V"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union of all required inputs for set; same training and evaluation eligibility"
+    },
+    {
+      "run_id": "h2_main",
+      "family": "h2",
+      "models": [
+        "B+S+V",
+        "B+S+V+A"
+      ],
+      "pairs": [
+        [
+          "B+S+V",
+          "B+S+V+A"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union of all required inputs for set; same training and evaluation eligibility"
+    },
+    {
+      "run_id": "calibration_matchedL60",
+      "family": "matched_horizon_calibration",
+      "models": [
+        "C",
+        "C+L",
+        "C+R",
+        "B"
+      ],
+      "pairs": [
+        [
+          "C",
+          "C+L"
+        ],
+        [
+          "C",
+          "C+R"
+        ],
+        [
+          "C+R",
+          "B"
+        ],
+        [
+          "C+L",
+          "B"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud60_dollar60",
+      "sample_rule": "common across primary mixed and both matched horizon variants, including R eligibility"
+    },
+    {
+      "run_id": "jointSV_matchedL60",
+      "family": "matched_horizon_semiconductor",
+      "models": [
+        "B",
+        "B+S+V"
+      ],
+      "pairs": [
+        [
+          "B",
+          "B+S+V"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud60_dollar60",
+      "sample_rule": "common across matched horizon variants, including R/S/V; primary mixed B versus joint SV is descriptive on this common sample"
+    },
+    {
+      "run_id": "calibration_matchedL252",
+      "family": "matched_horizon_calibration",
+      "models": [
+        "C",
+        "C+L",
+        "C+R",
+        "B"
+      ],
+      "pairs": [
+        [
+          "C",
+          "C+L"
+        ],
+        [
+          "C",
+          "C+R"
+        ],
+        [
+          "C+R",
+          "B"
+        ],
+        [
+          "C+L",
+          "B"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar252",
+      "sample_rule": "common across primary mixed and both matched horizon variants, including R eligibility"
+    },
+    {
+      "run_id": "jointSV_matchedL252",
+      "family": "matched_horizon_semiconductor",
+      "models": [
+        "B",
+        "B+S+V"
+      ],
+      "pairs": [
+        [
+          "B",
+          "B+S+V"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar252",
+      "sample_rule": "common across matched horizon variants, including R/S/V; primary mixed B versus joint SV is descriptive on this common sample"
+    },
+    {
+      "run_id": "semiconductor_industry_group",
+      "family": "semiconductor",
+      "models": [
+        "B",
+        "B+S",
+        "B+V",
+        "B+S+V"
+      ],
+      "pairs": [
+        [
+          "B",
+          "B+S"
+        ],
+        [
+          "B",
+          "B+V"
+        ],
+        [
+          "B+S",
+          "B+S+V"
+        ],
+        [
+          "B+V",
+          "B+S+V"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "industry_group",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union within set; one robustness change at a time"
+    },
+    {
+      "run_id": "semiconductor_window252",
+      "family": "semiconductor",
+      "models": [
+        "B",
+        "B+S",
+        "B+V",
+        "B+S+V"
+      ],
+      "pairs": [
+        [
+          "B",
+          "B+S"
+        ],
+        [
+          "B",
+          "B+V"
+        ],
+        [
+          "B+S",
+          "B+S+V"
+        ],
+        [
+          "B+V",
+          "B+S+V"
+        ]
+      ],
+      "exposure_window": 252,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union within set; one robustness change at a time"
+    },
+    {
+      "run_id": "h2_industry_group",
+      "family": "h2",
+      "models": [
+        "B+S+V",
+        "B+S+V+A"
+      ],
+      "pairs": [
+        [
+          "B+S+V",
+          "B+S+V+A"
+        ]
+      ],
+      "exposure_window": 504,
+      "controls": "industry_group",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union within set; one robustness change at a time"
+    },
+    {
+      "run_id": "h2_window252",
+      "family": "h2",
+      "models": [
+        "B+S+V",
+        "B+S+V+A"
+      ],
+      "pairs": [
+        [
+          "B+S+V",
+          "B+S+V+A"
+        ]
+      ],
+      "exposure_window": 252,
+      "controls": "sector",
+      "liquidity": "amihud252_dollar60",
+      "sample_rule": "union within set; one robustness change at a time"
+    },
+    {
+      "run_id": "portfolio_industry_group_blocks",
+      "family": "bounded_h7",
+      "models": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "pairs": [
+        [
+          "P0",
+          "P1"
+        ],
+        [
+          "P2",
+          "P3"
+        ],
+        [
+          "P0",
+          "P2"
+        ]
+      ],
+      "derived_contrast": "(loss P0-loss P1)-(loss P2-loss P3)",
+      "exposure_window": 504,
+      "residual_treatment": "industry_group_blocks",
+      "portfolio": "snapshot_weighted",
+      "sample_rule": "identical holdings/train dates/outcome dates/weights across all four",
+      "contingency": "defer H7 if Treasury unavailable or alignment indefensible"
+    },
+    {
+      "run_id": "portfolio_diagonal",
+      "family": "bounded_h7",
+      "models": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "pairs": [
+        [
+          "P0",
+          "P1"
+        ],
+        [
+          "P2",
+          "P3"
+        ],
+        [
+          "P0",
+          "P2"
+        ]
+      ],
+      "derived_contrast": "(loss P0-loss P1)-(loss P2-loss P3)",
+      "exposure_window": 504,
+      "residual_treatment": "diagonal",
+      "portfolio": "snapshot_weighted",
+      "sample_rule": "identical holdings/train dates/outcome dates/weights across all four",
+      "contingency": "defer H7 if Treasury unavailable or alignment indefensible"
+    }
+  ],
+  "descriptive_only": [
+    "B versus B+S+V+A on H2 common sample",
+    "B versus B+S+V for primary mixed liquidity on matched-horizon common sample",
+    "original saved forecast/covariance reconciliation; high/low parent-portfolio accounting"
+  ],
+  "pending_before_scoring": [],
+  "excluded": [
+    "H3",
+    "H4",
+    "ML/SPY classifier",
+    "Amihud-only sensitivity",
+    "new horizons/proxies",
+    "new portfolio families",
+    "full Cartesian grid"
+  ],
+  "operational_freeze": "extensions/company_risk/specification/OPERATIONAL_FREEZE.md",
+  "treasury_source_amendment": "extensions/company_risk/specification/PORTFOLIO_AMENDMENT.md",
+  "sample_records": "extensions/company_risk/data/processed/comparison_eligibility.csv",
+  "descriptive_execution_runs": [
+    "calibration_matchedMixed",
+    "jointSV_matchedMixed"
+  ]
+}

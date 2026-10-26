@@ -1,0 +1,34 @@
+{
+  "file": "data/processed/ff5_mom_factors_daily_2015-01-02_2026-08-31.csv",
+  "built_by": "notebooks/03_factors.ipynb",
+  "built_at_utc": "2026-10-14T04:47:41+00:00",
+  "inputs": [
+    {
+      "file": "data/raw/ff5_factors_daily_crsp_202608.zip",
+      "sha256": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186"
+    },
+    {
+      "file": "data/raw/momentum_factor_daily_crsp_202608.zip",
+      "sha256": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78"
+    },
+    {
+      "file": "data/processed/ff5_factors_daily_2015-01-02_2026-08-31.csv",
+      "sha256": "4f0aab85501cd632a63397c6b1fb6bc4dd4b5dab73411ffc999bf48486968527"
+    }
+  ],
+  "sha256": "63326418d32ce11eb07de8087960755bc49d80538ce39255971615a17fd11f78",
+  "rows": 2932,
+  "columns": [
+    "date",
+    "mkt_rf",
+    "smb",
+    "hml",
+    "rmw",
+    "cma",
+    "rf",
+    "mom"
+  ],
+  "factor_data_last_date": "2026-08-31",
+  "estimation_cutoff": "2026-08-31",
+  "note": "The five-factor table plus French's daily momentum factor (mom, decimal), same CRSP vintage, same rows. A separate table: the five-factor table is unchanged. French's mom sorts on prior return from day -250 to day -21; it is kept as a benchmark for the project's own 12-1 momentum."
+}

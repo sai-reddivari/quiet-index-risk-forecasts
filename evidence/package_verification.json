@@ -1,0 +1,879 @@
+{
+  "verification_date_utc": "2026-10-20",
+  "environment": {
+    "python": "3.14.8",
+    "dependency_lock": "requirements-lock.txt",
+    "dependency_lock_sha256": "db07e3c80fc655cefc7029d505c90e4d698a83694f94d93c3067b87fe8ce66c5"
+  },
+  "shipped_hash_verification": {
+    "files_by_study": {
+      "original": 95,
+      "intermediate": 85,
+      "revised": 89
+    },
+    "total_files": 269,
+    "all_match": true
+  },
+  "runner_checks": {
+    "prepared_company_check_passed": true,
+    "private_original_profile_check_passed": true,
+    "acquisition_notebook_refused": true,
+    "existing_output_directory_refused": true
+  },
+  "revised_portfolio": {
+    "execution_status": "completed",
+    "notebooks": [
+      "06_portfolio_treasury_application.ipynb"
+    ],
+    "source_revision": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+    "private_frozen_inputs_verified": 10,
+    "tables": [
+      {
+        "file": "contrast_summary.csv",
+        "rows": 24,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "5858dd65bed3ce314e74cd819889febcb10bb2ddddedae59190b0563afe9d395"
+      },
+      {
+        "file": "covariance_accounting.csv",
+        "rows": 186,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "268b04ee527cf02891fa21695b230920179796cafaf1ffcf4af5407993842fc6"
+      },
+      {
+        "file": "date_ledger.csv",
+        "rows": 19270,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "74c79e768aa7df2a83e1fc134cf3cde6e78cc9a906e47986901f1c7d62c95832"
+      },
+      {
+        "file": "forecasts.csv",
+        "rows": 240,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "3b2f5724764973faa6cd1398ddc80e22e003dc3051455f9354778c2219345bed"
+      },
+      {
+        "file": "original_bridge.csv",
+        "rows": 132,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "233ccc9c701de9255989c1ceb97c4db945753ad934aebb8574b3d4b47de563b5"
+      },
+      {
+        "file": "quarterly_contrasts.csv",
+        "rows": 60,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "16d315a62f46e002f10af326c832d1976337371ee58c218798ba73d076bee247"
+      },
+      {
+        "file": "samples.csv",
+        "rows": 34,
+        "byte_identical": true,
+        "maximum_absolute_numeric_delta": 0.0,
+        "sha256": "28c57b4426a4349d8e669f054000c31b058d460b1f842365efc4a16d12221701"
+      }
+    ],
+    "public_portfolio_contrasts_byte_identical": true,
+    "public_portfolio_contrasts_numeric_cells_compared": 432,
+    "completion_record_matches_source": true,
+    "completion": {
+      "status": "completed",
+      "treasury_coverage": {
+        "rows": 3170,
+        "start": "2014-01-02",
+        "end": "2026-09-30",
+        "valid_changes": 2880,
+        "source_sha256": "e9002194d2d51b29e522a86cda2f8079a7aa3510f2e9a79c6646953746373c9e"
+      },
+      "original_bridge_rows": 132,
+      "maximum_original_error": 8.6014528832834e-14,
+      "forecast_rows": 240,
+      "identity_tolerance": 1e-10,
+      "bootstrap": "2000 corrected circular replicates; block4 seed20261014; whole quarters; conditional on fitted exposures"
+    },
+    "headline": {
+      "industry_block_before_treasury_mean_qlike_improvement": -0.01692731587683094,
+      "industry_block_circular_95_interval": [
+        -0.04508306028950049,
+        0.011228428535838608
+      ],
+      "diagonal_before_treasury_mean_qlike_improvement": 0.004553115262359612,
+      "diagonal_circular_95_interval": [
+        -0.0022479841612602267,
+        0.01135421468597945
+      ]
+    }
+  },
+  "scope_limits": [
+    "Selected calculations from frozen inputs, not full raw-to-measurement replication of all three studies.",
+    "Company notebooks03-05 begin at frozen prepared measurements.",
+    "No new market data, holdout periods, or independent empirical replication.",
+    "Intervals remain conditional on fitted exposures and reused historical quarters."
+  ],
+  "revised_company": {
+    "execution_status": "completed",
+    "notebooks": [
+      "03_liquidity_recency_calibration.ipynb",
+      "04_semiconductor_representation.ipynb",
+      "05_downside_asymmetry.ipynb"
+    ],
+    "source_revision": "4fa7d9f07a427931fd86854c780a589d8499aca0",
+    "input_stage": "frozen prepared measurements and outcomes",
+    "private_inputs_used": 0,
+    "tables": [
+      {
+        "file": "calibration_company_inference.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "69cf270074f45f57f49e3dc85814c23a333776814b737ff61aa39c3dd94db3ba",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 64
+      },
+      {
+        "file": "calibration_company_predictions.csv.gz",
+        "byte_identical": false,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "45e7e34dc92d006336e74ccd2ce73aef5686f6773138e4e66847763d6df0a121",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 200176
+      },
+      {
+        "file": "calibration_company_quarterly_scores.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "7452a4a6e27be5cac2fb6c901b9c5d02f6063f5e27699b60631bf19a560595b4",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 416
+      },
+      {
+        "file": "calibration_paired_effects.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "def1b4116d7db6d7f8ba2dc262acc5f77837435ba64f5a235f3588e345eda165",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 416
+      },
+      {
+        "file": "calibration_training_preprocessing.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "5a52807bb39a2e0bdf40d97f232e8b30929d70dfa7eb620ca084f263481652f6",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 5200
+      },
+      {
+        "file": "h2_company_inference.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "3d9a16d4b5426cc3cb595611a544f20758d24e38d629f5e69aecd4977e0d98a5",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 12
+      },
+      {
+        "file": "h2_company_predictions.csv.gz",
+        "byte_identical": false,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "23497142ed8c536d1fb819a47e1e07749926f24b89cd0a49bd19bf1657218cd0",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 75216
+      },
+      {
+        "file": "h2_company_quarterly_scores.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "647125a03b4755750aa5edef648806f0b47015600bfe441f475a5d21da5f6234",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 156
+      },
+      {
+        "file": "h2_paired_effects.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "7eea182811b632d60f22c66e7f8f740dc7c16aefbf81900a2f4ac0c572f56034",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 78
+      },
+      {
+        "file": "h2_training_preprocessing.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "3fd9c6bb6858974cdfa54689d3ab18c287edf2088cdc943688861649a4edd38c",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 2574
+      },
+      {
+        "file": "semiconductor_company_inference.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "6396031d957d261f6a36fda37e0dae92ccfb23ec98d40606c643d4a1c299b16c",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 60
+      },
+      {
+        "file": "semiconductor_company_predictions.csv.gz",
+        "byte_identical": false,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "1b85576227fff390b3fbaacd7843faf943c97c7f8ab7531d751fdf7e9950c47e",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 225498
+      },
+      {
+        "file": "semiconductor_company_quarterly_scores.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "084dead1a4d2139da5da3dc54ecb5b8f623d3481b462090bba4e531a1fc8cb32",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 468
+      },
+      {
+        "file": "semiconductor_paired_effects.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "11a2daaf111faab5925ea0fd324fee0f4b59ae15e8767b0b17d7f1fd68b786f5",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 390
+      },
+      {
+        "file": "semiconductor_training_preprocessing.csv",
+        "byte_identical": true,
+        "csv_payload_identical": true,
+        "csv_payload_sha256": "7bc6de7dd257e3be3d4c7c59053a2beee9e74defcdbfa9c14898fce1d59cd1ae",
+        "maximum_absolute_numeric_delta": 0.0,
+        "rows": 7020
+      }
+    ],
+    "headline": {
+      "recent_risk_mean_quarterly_percentage_mse_gain": 10.056970258732745,
+      "liquidity_after_recent_mean_quarterly_percentage_mse_gain": 1.1475867869929817,
+      "signed_semiconductor_confirmation_mean_quarterly_percentage_mse_gain": -0.46143651101195454,
+      "signed_semiconductor_validation_mean_quarterly_percentage_mse_gain": 0.4062675957483324
+    },
+    "total_inference_rows": 136,
+    "public_aggregate_comparison": {
+      "rows": 136,
+      "keys_match": true,
+      "numeric_cells_compared": 1768,
+      "maximum_absolute_numeric_delta": 1.7763568394002505e-15,
+      "text_mismatches": 0,
+      "note": "Generated family-specific artifacts match pinned source exactly; consolidated public inference CSV has rounding-level float serialization differences."
+    }
+  },
+  "original": {
+    "execution_status": "completed",
+    "notebooks": [
+      "08_forward_risk_tests.ipynb",
+      "09_covariance_evaluation.ipynb"
+    ],
+    "completed_steps": [
+      "quiet_index_500.forward_tests.build_forward_tests",
+      "quiet_index_500.covariance_evaluation.build_covariance_evaluation"
+    ],
+    "source_revision": "14c5ba1333c63c6e12c116d468d60434b6aaedcf",
+    "private_frozen_inputs_verified": 9,
+    "tables": [
+      {
+        "file": "results/licensed/forward_tests/coefficient_inference.csv",
+        "byte_identical": true,
+        "sha256": "5aaeabd910d7ad9ef270b61a9503c6a6bb680e36a7c2bc94f695cd16c27fd008",
+        "rows": 192,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/coefficients_252.csv",
+        "byte_identical": true,
+        "sha256": "dd3ed7d4376a953def4a934843f66422178eaa7bebaa9c8db42e3a9999c9bd15",
+        "rows": 32400,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/coefficients_504.csv",
+        "byte_identical": true,
+        "sha256": "40a238659901ae22ca53ec3a5ccc91a8a7da343d1cd4118c2888826317e6164d",
+        "rows": 52080,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/paired_inference.csv",
+        "byte_identical": true,
+        "sha256": "40cb815d4ef4d795f5577918108d7f5eb5e7a1a8a74ff6ffc381848c3d81f524",
+        "rows": 768,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/predictions_252_residual_volatility.csv",
+        "byte_identical": true,
+        "sha256": "4ac04ac8512f5adfb39a7e8cb286a4be452d9db503281f8dc836493e43a71134",
+        "rows": 75552,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/predictions_252_total_volatility.csv",
+        "byte_identical": true,
+        "sha256": "cfb5a12266fd4b130d065a40ce6326cc1de8d74711182c17da39524b1b32c508",
+        "rows": 75552,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/predictions_504_residual_volatility.csv",
+        "byte_identical": true,
+        "sha256": "5cd6b3731e5f0dbcca9bbb7def0ecf366b8443a8bf1d7dbbee349617e7e7127f",
+        "rows": 124610,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/predictions_504_total_volatility.csv",
+        "byte_identical": true,
+        "sha256": "94512a8fba76593124aad52a8dc1ac4e38c5c5d8a9d3746e7738cedf892cdfcb",
+        "rows": 124610,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/quarters_252.csv",
+        "byte_identical": true,
+        "sha256": "686cf9c961bf20025df0b81441a3e2d96326c6dc566d374a50a3d0f5db566f74",
+        "rows": 720,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/forward_tests/quarters_504.csv",
+        "byte_identical": true,
+        "sha256": "e4ead23f051d3853505cb4b2ee3e0784113f7ac913d6fef3c3e76dd4260a0227",
+        "rows": 1200,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/date_omissions.csv",
+        "byte_identical": true,
+        "sha256": "6d7cddff39a5ea9cccac3c51dcc0f426bd0dea6ec1ba201d4ef640c0d33b078c",
+        "rows": 2901,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/membership.csv",
+        "byte_identical": true,
+        "sha256": "c13171b8f2796a6b06b3ae684045057905c29ef43eea04576d821f1172b33244",
+        "rows": 34702,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/paired_inference.csv",
+        "byte_identical": true,
+        "sha256": "0242c824203f73316710fb0de9d3fd744472e95dd6c03b37f0b796a330f000c1",
+        "rows": 192,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/paired_quarterly_differences.csv",
+        "byte_identical": true,
+        "sha256": "be89aba6beb386ca979bd4db3dca6857be426e2def6f4b428523c162d9667c81",
+        "rows": 1614,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/period_summary.csv",
+        "byte_identical": true,
+        "sha256": "cb298ff468f94d29e2edc3a7f9266e1d783710276aae2aa11a970e281f27e7fe",
+        "rows": 128,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/quarterly_evaluation.csv",
+        "byte_identical": true,
+        "sha256": "b9ff0c7b4bfd1d9dd466f13f301bf6a48a62d7e3718ac0b18b7e6ec08206e0f9",
+        "rows": 1152,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/realized_daily_returns.csv",
+        "byte_identical": true,
+        "sha256": "4ed85bad34a050b4dcca24a201d7c2f77af6441c42927a7d510cb2afa5f2a639",
+        "rows": 17027,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/licensed/covariance_evaluation/training_coverage.csv",
+        "byte_identical": true,
+        "sha256": "5aed340f0cfe530785bd8d4a0d3a9c51bc35d3b20e47b9b02eecb85864ebc30e",
+        "rows": 288,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/date_omissions.csv",
+        "byte_identical": true,
+        "sha256": "39b2afcbdf2c1fe066418aaf7e93675d8b7359b2089c2c3dc9c7b6be7d9af345",
+        "rows": 7701,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/membership.csv",
+        "byte_identical": true,
+        "sha256": "a1e6d7f0af20f2da16b2f69645ccff261e7f7d9fe250f75e0a2162a09aa74a5c",
+        "rows": 104418,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/paired_inference.csv",
+        "byte_identical": true,
+        "sha256": "84edae4a5685e18c829c33205d4a09a673013f58402c706c72f20db0c301c3d5",
+        "rows": 192,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/paired_quarterly_differences.csv",
+        "byte_identical": true,
+        "sha256": "f35410afcc03c795b11f7c65c8d8b236f72dc3c283cbf2c366156ce93d39a433",
+        "rows": 1590,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/period_summary.csv",
+        "byte_identical": true,
+        "sha256": "170a7843f9bc737c29b78ef4d5a5b07a172190a0106fe70a162b3bf3556dd7d1",
+        "rows": 128,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/quarterly_evaluation.csv",
+        "byte_identical": true,
+        "sha256": "d3720aed711b4477ed3bacc264d7db859b334832a09d283691f35b15e310f917",
+        "rows": 1152,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/realized_daily_returns.csv",
+        "byte_identical": true,
+        "sha256": "1b0ce92ee096d6fbccbc875ad504774f239d41e92198028418451a25fac3cc1c",
+        "rows": 16937,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/covariance_evaluation/training_coverage.csv",
+        "byte_identical": true,
+        "sha256": "4a7576f54d0ebe45a3e209a2381cc349c4e0f85bb465e734addf041fb329a814",
+        "rows": 288,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      }
+    ],
+    "table_count": 26,
+    "total_data_rows": 678094,
+    "byte_identical_tables": 26,
+    "maximum_absolute_numeric_delta": 0.0,
+    "text_mismatches": 0
+  },
+  "intermediate": {
+    "execution_status": "completed",
+    "notebooks": [
+      "06_calibration_and_activity.ipynb",
+      "08_rates_and_covariance.ipynb"
+    ],
+    "completed_steps": [],
+    "source_revision": "eab47102acb38d483271752934981277f5c90bec",
+    "private_frozen_inputs_verified": 9,
+    "tables": [
+      {
+        "file": "results/expansions/06/coefficients_equity_shock_sector.csv",
+        "byte_identical": false,
+        "sha256": "33ac7bf7dfe644b311aa3e1b02072d80a71dc70c38bb919bcb973a9539b25ed8",
+        "rows": 2618,
+        "maximum_absolute_numeric_delta": 9.999778782798785e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/coefficients_main_industry_group.csv",
+        "byte_identical": false,
+        "sha256": "5b428e79cbeeecdc5a6e83fd71811897aa3234e7cfa8afcd8dd5df6857b2d577",
+        "rows": 4186,
+        "maximum_absolute_numeric_delta": 1.0000333894311098e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/coefficients_main_sector.csv",
+        "byte_identical": false,
+        "sha256": "9abd00886fb3d7617f8892427f64fcfb9a99aee7b3655682cd12b90b6fa97b55",
+        "rows": 2618,
+        "maximum_absolute_numeric_delta": 1.0000333894311098e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/coefficients_window252_sector.csv",
+        "byte_identical": false,
+        "sha256": "ee8d206d6668da2c436cda69f1dd6c8df385db4d596c01d9bb068338dc91240a",
+        "rows": 2618,
+        "maximum_absolute_numeric_delta": 1.0000333894311098e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/eligibility_equity_shock_sector.csv",
+        "byte_identical": true,
+        "sha256": "2b3453a7896ed0722c089c878f07554bbdbeb74e6b84622330ba3208be854972",
+        "rows": 14,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/eligibility_main_industry_group.csv",
+        "byte_identical": true,
+        "sha256": "898be8e26ac5b04b52ae026df44828c876d15ce853d3862bbf32ff8e3773ec68",
+        "rows": 14,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/eligibility_main_sector.csv",
+        "byte_identical": true,
+        "sha256": "2e797e58c524f7c0f7d8118672794705853cfd1d609d58671b0affb2179be91f",
+        "rows": 14,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/eligibility_window252_sector.csv",
+        "byte_identical": true,
+        "sha256": "2aabf54cbca5ee54112d3feb1ecf4b324211531be51e4153e9dc8b420c0490b4",
+        "rows": 14,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/original_bridge_quarters.csv",
+        "byte_identical": false,
+        "sha256": "d0693cad9f44ba5b15e641d728ae48642b8d23610984c129feda072059abf9f7",
+        "rows": 78,
+        "maximum_absolute_numeric_delta": 1.0000056338554941e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/original_bridge_summary.csv",
+        "byte_identical": false,
+        "sha256": "9346bff8016c9e4e1a95376b703256b14ccf3ee003a5c4b495a7dc8c4994b880",
+        "rows": 9,
+        "maximum_absolute_numeric_delta": 1.0000030317702802e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/predictions_equity_shock_sector.csv",
+        "byte_identical": false,
+        "sha256": "ef468fde3067bffd9ac4a1e6a4b1eafd3244bc88bc21dee858e2d69edb6fed9c",
+        "rows": 54696,
+        "maximum_absolute_numeric_delta": 1.0000056338554941e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/predictions_main_industry_group.csv",
+        "byte_identical": false,
+        "sha256": "d6727b6c672d03129e4f1ae8e8383c7b7ea57a8bfbeb9f0707e310651298e4b8",
+        "rows": 54696,
+        "maximum_absolute_numeric_delta": 1.0000333894311098e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/predictions_main_sector.csv",
+        "byte_identical": false,
+        "sha256": "79aebb94bad252452dd1e928c1798a95648e67c7e0b0700cd2eddda1fe59841c",
+        "rows": 54696,
+        "maximum_absolute_numeric_delta": 1.0000056338554941e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/predictions_window252_sector.csv",
+        "byte_identical": false,
+        "sha256": "7e74c7e5002635c44e1c12c699b3d4b6b9044099578c6d00f6defecc255ca9cf",
+        "rows": 54888,
+        "maximum_absolute_numeric_delta": 1.000088900582341e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/quarters_equity_shock_sector.csv",
+        "byte_identical": false,
+        "sha256": "3d7326a0016dc7295b0092cf1d63c82015938fc0f99c1d976da883b1caf4b07d",
+        "rows": 112,
+        "maximum_absolute_numeric_delta": 9.999813477268304e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/quarters_main_industry_group.csv",
+        "byte_identical": false,
+        "sha256": "94a42d7d8a0517a3000dc5ff7a4aa235a33912364bd29f6b51fee0698a56edaf",
+        "rows": 112,
+        "maximum_absolute_numeric_delta": 1.000013873792005e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/quarters_main_sector.csv",
+        "byte_identical": false,
+        "sha256": "d40e5397dec85a5432225e5c1d19fb224c93817d7af33f7b51029b5edfb25770",
+        "rows": 112,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/quarters_window252_sector.csv",
+        "byte_identical": false,
+        "sha256": "0eb3d74268f2a00d1637a06a7b529fddd5ca04ece8c3c37a79e22cf1105cbd6a",
+        "rows": 112,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/summary_equity_shock_sector.csv",
+        "byte_identical": false,
+        "sha256": "edcb9b707577c5549895c78608ce364d57970aae11765d9d0a1ae3ec3699cb24",
+        "rows": 16,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/summary_main_industry_group.csv",
+        "byte_identical": false,
+        "sha256": "47c0dfa1b281bb132b225675547e4adb483b28242785e756ee5c8cdd8dbd4baf",
+        "rows": 16,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/summary_main_sector.csv",
+        "byte_identical": false,
+        "sha256": "6db94b5511cb54e2e8103b96ba0715dc661f466987b16737c5adbaf5b70b3f52",
+        "rows": 16,
+        "maximum_absolute_numeric_delta": 9.998946115530316e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/06/summary_window252_sector.csv",
+        "byte_identical": false,
+        "sha256": "95f5ba4fc00db0c02248d072956f0c427a46062f9d8393158c0317e631dcd5fd",
+        "rows": 16,
+        "maximum_absolute_numeric_delta": 1.0000247158137299e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/eligibility_equity_shock.csv",
+        "byte_identical": true,
+        "sha256": "001b3da024670d65ead696d943f6a2bc309e90b66feb7b3cfc1387c6cc65514e",
+        "rows": 136,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/eligibility_main.csv",
+        "byte_identical": true,
+        "sha256": "b6f79fab9c06a724dad19c83f0c1d696f0833cc8dd39264644f3625c51a37d2a",
+        "rows": 136,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/eligibility_window252.csv",
+        "byte_identical": true,
+        "sha256": "cd9de40d818693c0f7484570d46a22b8455538c6fd0db75caed1acea82e48c3f",
+        "rows": 136,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/evaluations_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "764bc2de6287950b5826dfdfc9ec58ebf74df43508a8c2e18112f9a7a9791a2b",
+        "rows": 1032,
+        "maximum_absolute_numeric_delta": 1.000000082740371e-11,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/evaluations_main.csv",
+        "byte_identical": false,
+        "sha256": "e9007189c3408f4c5fffc73ba6ab2ef90c66dd7110fe3190e0122e0a205a8051",
+        "rows": 1032,
+        "maximum_absolute_numeric_delta": 1.000000082740371e-11,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/evaluations_window252.csv",
+        "byte_identical": false,
+        "sha256": "5453f183ce7e404ff8173baeece92f780d79b9f0945758622f4c6d9ef3b24a7c",
+        "rows": 1048,
+        "maximum_absolute_numeric_delta": 1.000000082740371e-11,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/group_contributions_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "32a26443d5f405ce509717e618de3ed0c3d88c952fb757bfdf8b6769552c4d88",
+        "rows": 6166,
+        "maximum_absolute_numeric_delta": 9.999986949615902e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/group_contributions_main.csv",
+        "byte_identical": false,
+        "sha256": "e9422172368c0d14dfd3a6c9c8cdfd66ac4ab0dd4407efe0ea652b793c613889",
+        "rows": 6170,
+        "maximum_absolute_numeric_delta": 1.0000030317702802e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/group_contributions_window252.csv",
+        "byte_identical": false,
+        "sha256": "785993ab941dc8153b603e18e26729acef373cd1dc230bc4fab9a30f7ed6492f",
+        "rows": 6292,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/hindsight_diagnostics_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "7ef6024c0b47f716c0c8158276b157dd72043e65361524566d1f8d5b96bd0aa5",
+        "rows": 258,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/hindsight_diagnostics_main.csv",
+        "byte_identical": false,
+        "sha256": "268739ed44d1bfa0739865ffd43f674845ad3c1b230d0d8b1ed938644ec32b72",
+        "rows": 258,
+        "maximum_absolute_numeric_delta": 1.0000333894311098e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/hindsight_diagnostics_window252.csv",
+        "byte_identical": false,
+        "sha256": "984c4dbb372c428c44b18bb435e6de8c8c908853c51511b07486ec59bb743627",
+        "rows": 262,
+        "maximum_absolute_numeric_delta": 9.999813477268304e-15,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/identity_checks_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "4cda89ef38f034f5f0431fbe07394264adf9cba903804677df387f6620420aee",
+        "rows": 516,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/identity_checks_main.csv",
+        "byte_identical": false,
+        "sha256": "0c6bd27d3e4ff21ddea1b896b325737ad3bf1bd59cb6960ac79cd68586bdd736",
+        "rows": 516,
+        "maximum_absolute_numeric_delta": 1.0000680839006293e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/identity_checks_window252.csv",
+        "byte_identical": false,
+        "sha256": "ee5a67661740018dbab6232fa03e711c71ac4263e605556b8e611c6c64d95de7",
+        "rows": 524,
+        "maximum_absolute_numeric_delta": 1.0000247158137299e-14,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/memberships_equity_shock.csv",
+        "byte_identical": true,
+        "sha256": "aa3cfba10e684acbe836eabd0542c93f576103292bcd9e824a7caa1323dbba95",
+        "rows": 49038,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/memberships_main.csv",
+        "byte_identical": true,
+        "sha256": "8f6d2526b2ab7c9f10a7b83c1a268157aae47cbcc69cbd7d726f7dd93aca789c",
+        "rows": 49038,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/memberships_window252.csv",
+        "byte_identical": true,
+        "sha256": "0f72ae11ada6f35fc6891fdfd9fefa5fb4abeae1144ca709824e07f99835d93e",
+        "rows": 49389,
+        "maximum_absolute_numeric_delta": 0.0,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/quarters_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "bbee4733236d3e36ec9039e3d3d6ffad72ab71b226714fa384d346dd51138401",
+        "rows": 258,
+        "maximum_absolute_numeric_delta": 1.1699998608838413e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/quarters_main.csv",
+        "byte_identical": false,
+        "sha256": "71c1653d289f96ca48ee1946c9d4720ab40e981bb79a626b312ce7fc1a97cac0",
+        "rows": 258,
+        "maximum_absolute_numeric_delta": 1.160000914768311e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/quarters_window252.csv",
+        "byte_identical": false,
+        "sha256": "482fb468d1bbb971da9bfef17e75773a9c6009c5268e3d74d9b0fde4cf8ade07",
+        "rows": 262,
+        "maximum_absolute_numeric_delta": 1.000088900582341e-12,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/summary_equity_shock.csv",
+        "byte_identical": false,
+        "sha256": "46da0c16cbe592ed49dfebe5489a840e452613fd57771be3eee7630c7edf8e1e",
+        "rows": 24,
+        "maximum_absolute_numeric_delta": 1.9600000875780177e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/summary_main.csv",
+        "byte_identical": false,
+        "sha256": "8160c3deecf9476ee4e909e80f78921c3d9f9bf77e7e60e530dbaa0d8fad1091",
+        "rows": 24,
+        "maximum_absolute_numeric_delta": 1.9499999488400976e-13,
+        "text_mismatches": 0
+      },
+      {
+        "file": "results/expansions/08/summary_window252.csv",
+        "byte_identical": false,
+        "sha256": "1b2c38f6d494b4be3f98ceaa3bd7d8c847d07675b4943d9ffc7ee5f27a33b57e",
+        "rows": 24,
+        "maximum_absolute_numeric_delta": 1.4999980424423853e-13,
+        "text_mismatches": 0
+      }
+    ],
+    "table_count": 46,
+    "total_data_rows": 404468,
+    "byte_identical_tables": 10,
+    "maximum_absolute_numeric_delta": 1.000000082740371e-11,
+    "text_mismatches": 0
+  }
+}

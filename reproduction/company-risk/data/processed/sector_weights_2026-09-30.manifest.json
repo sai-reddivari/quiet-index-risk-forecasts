@@ -1,0 +1,20 @@
+{
+  "file": "data/processed/sector_weights_2026-09-30.csv",
+  "built_by": "notebooks/01_ivv_holdings.ipynb",
+  "built_at_utc": "2026-10-14T04:47:39+00:00",
+  "inputs": [
+    {
+      "file": "data/processed/ivv_equity_holdings_2026-09-30.csv",
+      "sha256": "c64b3e43616769ebb9cdc497963f9dee6c53f1f8691d084becc27d0a1056c164"
+    }
+  ],
+  "sha256": "407aa7ae36364808c8f7c7e34b4ba6b613203f0590d0cb95cab8a5c06005c4be",
+  "bytes": 577,
+  "rows": 11,
+  "columns": [
+    "gics_sector",
+    "weight",
+    "market_value_usd"
+  ],
+  "note": "Universe snapshot from IVV holdings dated 30 Sep 2026, an ETF proxy for the S&P 500. market_value_usd is the fund's holding, not company market cap."
+}

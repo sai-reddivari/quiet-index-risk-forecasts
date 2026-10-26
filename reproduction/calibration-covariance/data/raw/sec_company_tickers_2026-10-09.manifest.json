@@ -1,0 +1,19 @@
+{
+  "source": "U.S. Securities and Exchange Commission, company tickers file (ticker to CIK)",
+  "source_url": "https://www.sec.gov/files/company_tickers.json",
+  "download_command": "curl --silent --fail -A \"quiet-index-500 research <contact email>\" --output data/raw/sec_company_tickers_2026-10-09.json \"https://www.sec.gov/files/company_tickers.json\"",
+  "download_command_note": "SEC requires a User-Agent naming a contact; the contact used is replaced by a placeholder here.",
+  "source_last_modified_utc": "2026-10-09T20:52:47+00:00",
+  "as_of_date_basis": "HTTP Last-Modified header; the file carries no date of its own",
+  "pulled_at_utc": "2026-10-14T00:33:17+00:00",
+  "file": "sec_company_tickers_2026-10-09.json",
+  "sha256": "a9595d33a34615553ee706c95458fff0bb9fec9642a9d61710f3e5dbd45ca23e",
+  "bytes": 799583,
+  "rows": 10445,
+  "fields": [
+    "cik_str",
+    "ticker",
+    "title"
+  ],
+  "note": "Public U.S. government data. CIK is the SEC registrant identifier: one per issuer, shared by its share classes. Ticker spelling uses a hyphen for share classes (BRK-B), the same as Yahoo."
+}

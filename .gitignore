@@ -1,0 +1,18 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+runs/
+*.pyc
+# Frozen vendor inputs are restored privately into disposable run directories.
+**/data/raw/prices_*_through_2026-10-12.csv
+**/data/raw/market_cap_fmp_through_2026-10-12.csv
+**/data/processed/issuer_market_cap_through_2026-10-12.csv
+**/data/processed/market_cap_same_security_through_2026-10-12.csv
+**/data/raw/treasury/fmp_treasury_rates.json
+**/local/
+.env
+**/*api_key*
+# Publication planning stays local.
+/LINKEDIN_DRAFT.md
