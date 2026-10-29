@@ -1,0 +1,9 @@
+# Reading editions duplicate executable research sources under reproduction/.
+# Exclude only these report copies from language statistics.
+notebooks/company-risk-factor-benchmark.ipynb linguist-documentation
+notebooks/forecast-calibration-and-trading-activity.ipynb linguist-documentation
+notebooks/interest-rates-and-covariance.ipynb linguist-documentation
+notebooks/portfolio-covariance.ipynb linguist-documentation
+notebooks/portfolio-risk-and-treasury-controls.ipynb linguist-documentation
+notebooks/recent-risk-and-liquidity.ipynb linguist-documentation
+notebooks/semiconductor-exposure.ipynb linguist-documentation
